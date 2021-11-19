@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="robots" content="index,follow,noodp">
+  <meta name="googlebot" content="index,follow">
+  <!-- <meta property="og:locale" content="ru_RU"> -->
+
+  <!-- fonts here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" href="css/bootstrap-grid.min.css">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" href="css/main.min.css">
+  <noscript><link rel="stylesheet" href="css/bootstrap-grid.min.css"></noscript>
+  <noscript><link rel="stylesheet" href="css/main.min.css"></noscript>
+
+  <title>Welcome</title>
+</head>
+<body>
+  <main class="page page_welcome page_bg1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-12 order-1 order-md-0" style="position: static">
+          <video autoplay muted loop playsinline id="myVideo" poster="img/cover.jpg" class="page_welcome__bg-video">
+            <source src="video/optimizied.mp4" type="video/mp4">
+            <source src="video/optimizied.mov" type="video/mp4">
+          </video>
+          <footer class="footer-mob d-block d-md-none">
+            © 2021 Steppe Capital
+          </footer>
+        </div>
+        <div class="col-lg-6 col-md-12 ml-auto" style="position:static;">
+          <div class="page_welcome__content">
+            <header class="header d-flex align-items-center">
+              <a href="/" class="logo"><img src="img/LOGO%20Steppe.svg" alt="home logo"></a>
+              <div class="lang dropdown">
+                <a href="#" class="dropdown__current d-flex align-items-center">
+                  Eng
+                  <svg class="dropdown__icon" width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L5 5L10 0H0Z" fill="#151515"/>
+                  </svg>
+                </a>
+                <ul class="dropdown__list">
+                  <li class="dropdown__item"><a href="#">Language_1</a></li>
+                  <li class="dropdown__item"><a href="#">Language_2</a></li>
+                  <li class="dropdown__item"><a href="#">Language_3</a></li>
+                </ul>
+              </div>
+              <a href="sign-up.html" class="btn btn_style2 header__sign-up">Sign  Up</a>
+            </header>
+            <div class="offer page_welcome__offer">
+              <h1 class="offer__title big">
+                Discover a new world of cryptocurrency investment<br>
+                with <span>Steppe Capital</span>
+              </h1>
+              <a href="sign-up.html"  class="btn btn_style1 offer__btn">Sign Up Now</a>
+            </div>
+            <footer class="footer d-none d-md-block">
+              © 2021 Steppe Capital
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="robots" content="index,follow,noodp">
+    <meta name="googlebot" content="index,follow">
+    <!-- <meta property="og:locale" content="ru_RU"> -->
+
+    <!-- fonts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" href="css/bootstrap-grid.min.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" href="css/main.min.css">
+    <noscript><link rel="stylesheet" href="css/bootstrap-grid.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="css/main.min.css"></noscript>
+
+    <title>Sign Up</title>
+</head>
+<body>
+<main class="page page_welcome">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 order-1 order-md-0 d-md-block d-none" style="position: static">
+                <video autoplay muted loop playsinline id="myVideo" poster="img/cover.jpg" class="page_welcome__bg-video">
+                    <source src="video/optimizied.mp4" type="video/mp4">
+                    <source src="video/optimizied.mov" type="video/mp4">
+                </video>
+                <footer class="footer-mob d-block d-md-none">
+                    © 2021 Steppe Capital
+                </footer>
+            </div>
+            <div class="col-lg-6 col-md-12 ml-auto" style="position:static;">
+                <div class="page_welcome__content">
+                    <header class="header d-flex align-items-center">
+                        <a href="/" class="logo"><img src="img/LOGO%20Steppe.svg" alt="home logo"></a>
+                        <div class="lang dropdown">
+                            <a href="#" class="dropdown__current d-flex align-items-center">
+                                Eng
+                                <svg class="dropdown__icon" width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0L5 5L10 0H0Z" fill="#151515"/>
+                                </svg>
+                            </a>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item"><a href="#">Language_1</a></li>
+                                <li class="dropdown__item"><a href="#">Language_2</a></li>
+                                <li class="dropdown__item"><a href="#">Language_3</a></li>
+                            </ul>
+                        </div>
+                        <a href="sign-up.html" class="btn btn_style2 header__sign-up">Sign  Up</a>
+                    </header>
+
+                    <div class="page_welcome__offer">
+                        <h1 class="offer__title">Sign Up</h1>
+                    </div>
+
+                    <form action="" method="POST" class="form form_sign-up">
+                        <div class="input-group">
+                            <label for="inviter" class="input-group__label">Who invited you?</label>
+                            <input type="text" name="inviter" id="inviter" class="input-group__input" placeholder="123456789123">
+                            <span class="inviter">Admin</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone" class="input-group__label">Phone number</label>
+                            <input type="tel" name="phone" id="phone" class="input-group__input" value="(456)-456-45-45">
+                        </div>
+                        <div class="input-group">
+                            <label for="nickname" class="input-group__label">Nickname <span class="error-text">* This field is required</span></label>
+                            <input type="text" name="nickname" id="nickname" class="input-group__input error" placeholder="Nickname">
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <div class="input-group" style="max-width: 208px">
+                                <label for="pass" class="input-group__label">Password</label>
+                                <input type="password" name="pass" id="pass" class="input-group__input" placeholder="Password">
+                                <a href="#!" class="input-group__eye"></a>
+                            </div>
+                            <div class="input-group ml-auto"  style="max-width: 208px">
+                                <label for="pass_repeat" class="input-group__label">Password repeat</label>
+                                <input type="password" name="pass_repeat" id="pass_repeat" class="input-group__input" placeholder="Password repeat">
+                                <a href="#!" class="input-group__eye"></a>
+                            </div>
+                            <div class="input-group submit-form-buttons d-flex justify-content-between align-items-center" style="width: 100%">
+                                <button class="btn btn_style1">Sign  Up now</button>
+
+                                <label for="MyCustomCheckbox" class="custom-checkbox d-flex d-md-none error">
+                                    <input class="custom-checkbox__input" type="checkbox" id="MyCustomCheckbox">
+                                    <span class="custom-checkbox__icon">
+                                        <span class="custom-checkbox__fill"></span>
+                                    </span>
+                                    <div class="custom-checkbox__label">I accept <a href="#">terms and conditions of the Agreement</a></div>
+                                </label>
+
+                                <div class="form_sign-up__btn2">or <a href="log-in.html" class="login-btn">Log In</a></div>
+                            </div>
+
+                            <label for="MyCustomCheckbox" class="custom-checkbox d-none d-md-flex error">
+                                <input class="custom-checkbox__input" type="checkbox" id="MyCustomCheckbox">
+                                <span class="custom-checkbox__icon">
+                                    <span class="custom-checkbox__fill"></span>
+                                </span>
+                                <div class="custom-checkbox__label">I accept <a href="#">terms and conditions of the Agreement</a></div>
+                            </label>
+                        </div>
+                    </form>
+
+                    <footer class="footer">
+                        © 2021 Steppe Capital
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="js/libs.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>
