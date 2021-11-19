@@ -5,7 +5,7 @@
 .dropdown:hover .dropdown__list{
   opacity: 1;
   visibility: visible;
-  top: 28px
+  top: 48px
 }
 
 .dropdown__icon{
@@ -17,7 +17,7 @@
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
   padding: 12px 0 12px 0;
   position: absolute;
-  top: 38px;
+  top: 82px;
   visibility: hidden;
   transition: all .3s ease;
   opacity: 0;
