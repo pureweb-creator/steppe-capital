@@ -10,7 +10,7 @@ $(document).ready(function(){
     }
 
     $('.input-group__edit').on('click', function(){
-
+        $(this).parent().find("input:not(#nickname),input:not(#email)").removeAttr("readonly").focus();
     });
 
     $('#phone').mask("(999) 999-99-99",{autoclear: false});
