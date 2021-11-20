@@ -19,8 +19,21 @@
 .country-phone-option:hover span, .country-phone-option.hovered span {color: #000;}
 .country-phone-option span img {margin-left: 3px;}
 .country-phone {display: flex; position: relative;}
-.country-phone-selected span{ display: flex; align-items: center; margin-right: 5px; width: max-content;}
-.country-phone-selected {padding: 0px 0 5px 0px; font-size: 14px;}
+.country-phone-selected span{ isplay: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+}
+.country-phone-selected {padding: 0px 0 0px 0px; font-size: 14px;}
 .country-phone-selected img {margin: 0px 32px 1px 0;}
 .country-phone-selected {background-position: 40px 10px}
 .country-phone-option {display: flex; align-items: center;}
@@ -30,7 +43,10 @@
 .country-phone-selector{
   position: absolute;
   left: 12px;
-  top: 5px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .flag {
