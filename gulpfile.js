@@ -24,7 +24,7 @@ function browserReload(done){
 }
 
 function build(done){
-    gulp.src("./scss/**/*.scss")
+    gulp.src("./static/scss/**/*.scss")
         .pipe(sourcemaps.init())
         .pipe(sass({
             errorLogToConsole: true,
@@ -33,13 +33,13 @@ function build(done){
         .on("error", console.error.bind(console))
         .pipe(rename({suffix: ".min"}))
         .pipe(sourcemaps.write("./"))
-        .pipe(gulp.dest("./css/"))
+        .pipe(gulp.dest("./static/css/"))
         .pipe(browserSync.stream());
     done();
 }
 
 function jsBuild(done){
-	gulp.src('./js/**/main.js')
+	gulp.src('./static/js/**/main.js')
 		.pipe(sourcemaps.init())
 		.pipe(uglify())
 		.pipe(rename({suffix: ".min"}))
@@ -50,18 +50,18 @@ function jsBuild(done){
 }
 
 function imgToWebp(done){
-    gulp.src(['./img/*.jpg','./img/*.png','./img/*.tiff'])
+    gulp.src(['./static/img/*.jpg','./static/img/*.png','./static/img/*.tiff'])
         .pipe(webp())
-        .pipe(gulp.dest('img'))
+        .pipe(gulp.dest('static/img'))
     done();
 }
 
 function watch(){
-    gulp.watch("./scss/**/*.scss", build);
+    gulp.watch("./static/scss/**/*.scss", build);
     gulp.watch("./*.html", browserReload);
-    gulp.watch("./js/**/main.js", jsBuild);
+    gulp.watch("./static/js/**/main.js", jsBuild);
     gulp.watch("php/**/*.php", browserReload);
-    gulp.watch(['./img/*.jpg','./img/*.png','./img/*.tiff'],imgToWebp);
+    gulp.watch(['./static/img/*.jpg','./static/img/*.png','./static/img/*.tiff'],imgToWebp);
 }
 
 gulp.task("default", gulp.parallel(watch, livereload));

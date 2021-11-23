@@ -1,0 +1,131 @@
+body{
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: $txt1_main;
+    position: relative;
+}
+
+h1,h2,h3{
+    line-height: 110%;
+    font-family: "Bebas Neue";
+}
+
+h4,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1.big{
+    font-size: 64px;
+}
+
+h1{
+    font-size: 48px;
+}
+
+h3,.h3{
+    font-size: 32px;
+}
+
+h4{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+h5{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-inline-flex{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-start{
+    align-items: flex-start;
+}
+
+.align-items-end{
+    align-items: end;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-start{
+    justify-content: flex-start;
+}
+
+.justify-content-end{
+    align-items: flex-end;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.mr-auto{
+    margin-right: auto;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+a{
+    color: $txt1_main;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 1.2192857142857143em;
+    word-break: break-all;
+}
+
+.small{
+    opacity: .6;
+}
+.text-underline{
+    text-decoration: underline;
+}
+
+.page_profile{
+    background: #f8f8f8;
+    padding: 64px 0;
+}
+
+.mb-0{
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 600px) {
+    .mb-sm-0 {
+        margin-bottom: 0 !important;
+    }
+}
