@@ -1,0 +1,31 @@
+.card_style1{
+    background: #fff;
+    padding: 32px;
+    
+
+
+    &__title{
+        margin-bottom: 24px;
+    }
+    &__desc{
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+
+        p:not(:last-child){
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.card{
+    margin-bottom: 32px;
+    &__price{
+        font-weight: 600;
+        span{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    }
+}

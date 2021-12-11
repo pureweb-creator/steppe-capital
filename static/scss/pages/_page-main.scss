@@ -3,11 +3,11 @@
 }
 
 .banner{
-  background: $blue1_main;
   color: #fff;
   font-size: 16px;
   position: relative;
   margin-bottom: 48px;
+  background: $blue1_main url('../img/banner.png') no-repeat right center / contain;
 
   .banner__inner{
     padding: 48px 0 48px 80px;
@@ -20,11 +20,6 @@
 
   &__text{
     max-width: 573px;
-  }
-
-  .banner__img-wrap{
-    position: relative;
-    overflow: hidden;
   }
 
   .banner__img1{
@@ -103,3 +98,8 @@
 #copyLinkBtn{
   width: auto;
 }
+
+.shop{
+  margin-top: 64px
+}
+

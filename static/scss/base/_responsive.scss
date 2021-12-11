@@ -183,6 +183,12 @@
   .banner .banner__inner{
     padding: 32px 48px;
   }
+  .banner{
+    padding-bottom: 124px;
+    background-position: bottom right;
+    background-image: url('../img/banner-mob.png');
+    background-size: auto 124px;
+  }
   .banner__img-wrap{
     width: 100%;
   }
@@ -265,6 +271,38 @@
     bottom: -1px;
     right: 5px;
   }
+
+
+  .card_style1{
+    padding: 24px;
+    &__title{
+      margin-bottom: 15px;
+    }
+    &__desc{
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .row{
+    height: auto !important;
+    & > div{
+      position: static !important;
+    }
+  }
+
+  .card{
+    
+  }
+
+  .card__price{
+    margin-bottom: 15px;
+  }
+
+
+  .footer-menu{
+    display: none;
+  }
 }
 
 
@@ -273,4 +311,5 @@
     margin-top: 20px;
     //position: static;
   }
+  
 }

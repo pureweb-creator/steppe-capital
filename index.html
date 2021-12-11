@@ -12,7 +12,7 @@
     <!-- fonts here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" href="static/css/bootstrap-grid.min.css">
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" href="static/css/main.min.css">
@@ -75,10 +75,6 @@
                        Please note that this is an alpha version of the backoffice and for now it in a test mode. It does not yet have most of the necessary features, but they will appear soon.
                    </p>
                </div>
-               <figure class="banner__img-wrap">
-                   <img src="static/img/alpha.svg" alt="alpha" class="banner__img1">
-                   <img src="static/img/main-image-1.webp" alt="" class="banner__img2">
-               </figure>
            </div>
 
            <div class="row">
@@ -114,16 +110,103 @@
                    </div>
                </div>
            </div>
+
+            <div class="shop">
+                <div class="page_main__offer">
+                    <h2 class="offer__title">Shop</h2>
+                </div>
+
+                <div class="row" data-masonry='{"percentPosition": true }'>
+                    <div class="col-lg-6">
+                        <div class="card card_style1">
+                            <h4 class="card_style1__title">
+                                From zero to trader From zero to traderFrom zero to trader
+                            </h4>
+                            <p class="card_style1__desc">
+                                Training course that teaches you how to trade and make money in the cryptocurrency markets. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="card__price card_style1__price">
+                                    Price: <span>500</span> USD(T)
+                                </div>
+                                <button class="btn btn_style1">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card card_style1">
+                            <h4 class="card_style1__title">
+                                Trading signals (1 month)
+                            </h4>
+                            <div class="card_style1__desc">
+                                <p>
+                                Training course that teaches you how to trade and make money in the cryptocurrency markets. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus sed est et rhoncus. Maecenas vitae ligula vitae odio posuere aliquet eu eget enim. Curabitur interdum nulla id mauris suscipit, id egestas lacus sollicitudin. Suspendisse felis est, ullamcorper in vestibulum eget, tincidunt ac risus. Praesent vulputate nisi nec condimentum tristique.
+                                </p>
+                                <p>
+                                    Training course that teaches you how to trade and make money in the cryptocurrency markets. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus sed est et rhoncus. Maecenas vitae ligula vitae odio posuere aliquet eu eget enim. Curabitur interdum nulla id mauris suscipit, id egestas lacus sollicitudin. Suspendisse felis est, ullamcorper in vestibulum eget, tincidunt ac risus. Praesent vulputate nisi nec condimentum tristique.
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="card__price card_style1__price">
+                                    Price: <span>300</span> USD(T)
+                                </div>
+                                <button class="btn btn_style1">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card card_style1">
+                            <h4 class="card_style1__title">
+                                From zero to trader
+                            </h4>
+                            <p class="card_style1__desc">
+                                Training course that teaches you how to trade and make money in the cryptocurrency markets. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus sed est et rhoncus. Maecenas vitae ligula vitae odio posuere aliquet eu eget enim. Curabitur interdum nulla id mauris suscipit, id egestas lacus sollicitudin. Suspendisse felis est, ullamcorper in vestibulum eget, tincidunt ac risus. Praesent vulputate nisi nec condimentum tristique.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="card__price card_style1__price">
+                                    Price: <span>500</span> USD(T)
+                                </div>
+                                <button class="btn btn_style1">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card card_style1">
+                            <h4 class="card_style1__title">
+                                Trading signals (1 month)
+                            </h4>
+                            <p class="card_style1__desc">
+                                Training course that teaches you how to trade and make money in the cryptocurrency markets. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="card__price card_style1__price">
+                                    Price: <span>300</span> USD(T)
+                                </div>
+                                <button class="btn btn_style1">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
        </div>
     </main>
 
     <footer class="footer2">
-        <div class="container">
-            © 2021 Steppe Capital
+        <div class="container d-flex align-items-center justify-content-between">
+            <p>© 2021 Steppe Capital</p>
+            <ul class="footer-menu d-flex">
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Cookies policy</a></li>
+            </ul>
         </div>
     </footer>
 
     <script src="static/js/libs.js"></script>
-    <script src="static/js/main.min.js"></script>
+    <script src="static/js/main.js"></script>
 </body>
 </html>
