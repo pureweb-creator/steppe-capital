@@ -1,6 +1,8 @@
 .card_style1{
     background: #fff;
     padding: 32px;
+    
+
 
     &__title{
         margin-bottom: 24px;
@@ -17,6 +19,7 @@
 }
 
 .card{
+    margin-bottom: 32px;
     &__price{
         font-weight: 600;
         span{
