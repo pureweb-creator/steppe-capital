@@ -1,0 +1,109 @@
+.table{
+    width: 100%;
+    min-width: max-content;
+
+    &__head{
+        color: $blue1_main;
+        border-bottom: 2px solid $grey2_bg;
+
+
+        .table__line{
+            padding-top: 0;
+        }
+    }
+
+    &__row{
+        &:hover{
+            .cell__user-nickname{
+                color: $blue1_main
+            }
+            .cell__expand-btn{
+                cursor: pointer;
+                path{
+                    fill: $blue1_main
+                }
+            }
+        }
+
+
+        td{
+            padding: 16px 0;
+        }
+        td:first-child{
+            padding-left: 32px;
+        }
+        td:last-child{
+            padding-right: 32px;
+        }
+    }
+
+    .cell{
+
+        &__number{
+            border: 1px solid $grey1_stroke;
+            border-radius: 4px;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            margin-right: 8px;
+        }
+        &__user-avatar{
+            width: 32px;
+            height: 32px;
+            margin-right: 16px;
+            border-radius: 4px;
+        }
+        &__user-nickname{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1em;
+            margin-right: 10px;
+        }
+        &__info-btn{
+            margin-right: 13px;
+        }
+        &__expand-btn{
+            width: auto;
+            height: auto;
+            padding: 10px;
+            line-height: initial;
+            transition: all .3s ease;
+            &.active{
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .table__line_non_active{
+        .cell__info-btn{
+            
+            path:first-child{
+                // fill: rgba($red_error,.15);
+                fill: #f9dcdc;
+
+            }
+            path:nth-child(2),
+            path:nth-child(3){
+                fill: $red_error
+            }
+        }
+        .cell__expand-btn{
+            display: none;
+        }
+    }
+
+    .empty .cell__expand-btn{
+        display: none;
+    }
+}
+
+table.simple-tree-table svg.tree-icon.tree-opened {
+    transform: rotate(180deg)
+ }
+table.simple-tree-table svg.tree-icon.tree-opened:after {
+   display: none
+}
+table.simple-tree-table svg.tree-icon.tree-closed:after {
+    display: none;
+}

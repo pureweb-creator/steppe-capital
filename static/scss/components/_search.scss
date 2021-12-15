@@ -1,0 +1,16 @@
+.search-form{
+    &__input{
+        background: $grey3_bg;
+        border: unset;
+        max-width: 280px;
+        padding: 9px 0 8px 12px;
+    }
+    .input-group{
+        margin-bottom: 0;
+    }
+    &__btn{
+        margin: 0 0 0 8px;
+        padding: 0;;
+        cursor: pointer;
+    }
+}

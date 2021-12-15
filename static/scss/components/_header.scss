@@ -1,19 +1,50 @@
-.lang{
-  margin-left: auto;
-}
-
 .header{
-  padding: 16px 0;
-
   a{
     font-size: 14px;
   }
 }
 
+.header_top{
+  padding: 16px 0 10px 0;
+}
+
+.header_bottom{
+  padding: 9px 0 11px 0;
+  border-top: 2px solid $grey2_bg 
+}
+
+.logo{
+  margin-left: -25px;
+}
+
+.burger{
+  display: none;
+}
+
+.header__lang{
+  margin-right: 9px;
+  margin-left: 22px;
+}
+.header__cart{
+  margin: 0 30px 0 32px;
+
+  &-count{
+    width: 29px;
+    height: 24px;
+    border-radius: 12px;
+    background: $yellow;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+  }
+}
 
 .header__sign-up{
   margin-left: 64px;
 }
+
 
 .profile-mini{
   .dropdown__list{
@@ -29,7 +60,32 @@
     width: 48px;
     height: 48px;
     object-fit: cover;
-    margin-right: 15px;
+    margin-right: 12px;
     margin-left: 12px;
   }
+}
+
+.main-nav{
+  &__item:not(:last-child){
+    margin-right: 16px;
+  }
+  &__item.active a,&__item:hover a{
+    color: $blue1_main;
+  }
+  &__item span{
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 10px;
+    color: $blue1_main;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: rgba(215, 241, 255, 0.5);
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+  }
+}
+
+.header__search-form{
+  margin-left: 48px;
 }

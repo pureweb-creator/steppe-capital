@@ -23,45 +23,81 @@
 </head>
 <body>
 
-<header class="header">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-2 col-4">
-                <a href="/" class="logo"><img src="static/img/LOGO%20Steppe.svg" alt="home logo"></a>
-            </div>
-            <div class="col-lg-2 col-4 ml-auto">
-                <div class="lang dropdown">
-                    <a href="#" class="dropdown__current d-flex align-items-center justify-content-end">
-                        Eng
-                        <svg class="dropdown__icon" width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0L5 5L10 0H0Z" fill="#151515"/>
-                        </svg>
-                    </a>
-                    <ul class="dropdown__list">
-                        <li class="dropdown__item"><a href="#">Language_1</a></li>
-                        <li class="dropdown__item"><a href="#">Language_2</a></li>
-                        <li class="dropdown__item"><a href="#">Language_3</a></li>
-                    </ul>
+    <header class="header">
+        <div class="container">
+            <div class="header_top"> 
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-4">
+                        <a href="/" class="logo"><img src="static/img/LOGO%20Steppe.svg" alt="home logo"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-7 d-flex align-items-center ml-auto">
+                        <div class="header__lang dropdown">
+                            <a href="#" class="dropdown__current d-flex align-items-center justify-content-end">
+                                Eng
+                                <svg class="dropdown__icon" width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0L5 5L10 0H0Z" fill="#151515"/>
+                                </svg>
+                            </a>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item"><a href="#">Language_1</a></li>
+                                <li class="dropdown__item"><a href="#">Language_2</a></li>
+                                <li class="dropdown__item"><a href="#">Language_3</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="cart header__cart d-flex">
+                            <img src="static/img/icon-basket.svg" alt="">
+                            <span class="cart__count header__cart-count">0</span>
+                        </div>
+
+                        <div class="profile-mini dropdown d-flex align-items-center">
+                            <span class="profile-mini__name">codi999</span>
+                            <img src="static/img/user-avatar.webp" alt="Avatar" class="profile-mini__avatar lazy">
+                            <img src="static/img/arrow-down.png" alt="arrow" class="profile-mini__arrow">
+
+                            <div class="">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item"><a href="index.html">Profile</a></li>
+                                    <li class="dropdown__item"><a href="settings.html">Settings</a></li>
+                                    <li class="dropdown__item"><a href="#">Log out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-3">
-                <div class="profile-mini dropdown d-flex align-items-center">
-                    <span class="profile-mini__name">codi999</span>
-                    <img src="static/img/user-avatar.webp" alt="Avatar" class="profile-mini__avatar lazy">
-                    <img src="static/img/arrow-down.png" alt="arrow" class="profile-mini__arrow">
-
-                    <div class="">
-                        <ul class="dropdown__list">
-                            <li class="dropdown__item"><a href="index.html">Profile</a></li>
-                            <li class="dropdown__item"><a href="settings.html">Settings</a></li>
-                            <li class="dropdown__item"><a href="#">Log out</a></li>
-                        </ul>
+            <div class="header_bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <nav class="main-nav">
+                            <ul class="main-nav__menu d-flex align-items-center">
+                                <li class="main-nav__item"><a href="#">Shop</a></li>
+                                <li class="main-nav__item"><a href="#">Main</a></li>
+                                <li class="main-nav__item"><a href="#">Education</a></li>
+                                <li class="main-nav__item"><a href="#">Signals <span>new</span></a></li>
+                                <li class="main-nav__item active"><a href="#">Structure</a></li>
+                                <li class="main-nav__item"><a href="#">Statistics</a></li>
+                                <li class="main-nav__item"><a href="#">News</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4 ml-auto">
+                        <form action="" method="GET" class="search-form">
+                            <div class="input-group d-flex align-items-center flex-nowrap">
+                                <input type="text" class="input-group__input search-form__input" placeholder="Search">
+                                <button class="search-form__btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#151515" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#151515" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>                                                                     
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
 <main class="page page_profile page_bg2">
     <div class="container">

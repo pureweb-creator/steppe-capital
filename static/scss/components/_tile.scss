@@ -1,0 +1,104 @@
+.tile{
+    padding: 32px;
+    background: #fff;
+    border-radius: 4px;
+    height: 100%;
+}
+
+.tile-table-wrapper{
+    overflow-x: auto;
+    width: calc(100% + 64px);
+    margin: 0 -32px;
+}
+  
+.tile__caption{
+    margin-right: 64px;
+}
+  
+.tile__item{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid $blue1_main;
+    padding: 12px;
+    flex: 1 1 0;
+    margin-right: 24px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+}
+  
+.tile__title{
+    margin-bottom: 24px;
+    display: inline-block !important;
+    position: relative;
+
+    &:hover{
+        .tooltip{
+            opacity: 1;
+            bottom: calc(100% + 5px);
+        }
+
+        svg{
+            path{
+                fill: $blue1_main;
+            }
+        }
+    }
+
+    .tooltip{
+        position: absolute;
+        left: calc(100% - 20px);
+        width: 100%;
+        bottom: calc(100% - 5px);
+        transition: all .3s ease;
+    }
+}
+
+.tile__item-title{
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 500;
+    opacity: .6;
+    display: block;
+    position: relative;
+}
+.tile__number{
+    display: block;
+    font-size: 48px;
+    line-height: 1.22em;
+}
+
+.tile__item_blue2{
+    border-color: $blue2;
+}
+
+.tile__item_yellow{
+    border-color: $yellow;
+}
+
+.tile-sponsor{
+    &__avatar{
+        width: 96px;
+        height: 96px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-right: 24px;
+    }
+
+    &__name{
+        line-height: 1.5em;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    &__contact-key{
+        margin-right: 12px;
+        display: inline-block;
+        color: $txt2;
+        margin-bottom: 8px;
+    }
+}
