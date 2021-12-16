@@ -141,8 +141,13 @@
 
   .tile__title .tooltip{
     left: 50%;
-    bottom: calc(100% + 10px);
+    bottom: calc(100% + 5px) !important;
   }
+
+  .tile__title:hover .tooltip {
+    opacity: 1;
+    bottom: calc(100% + 15px) !important;
+}
 
 
   .tile__title_tree{
