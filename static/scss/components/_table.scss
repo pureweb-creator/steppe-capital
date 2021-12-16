@@ -19,7 +19,7 @@
 
     &__row{
         // display: table-row;
-        border-bottom: 1px solid $grey2_bg;
+        border-bottom: .5px solid $grey2_bg;
         &:hover{
             background: $grey2_bg;
             .cell__user-nickname{
