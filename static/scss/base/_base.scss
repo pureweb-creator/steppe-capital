@@ -1,3 +1,7 @@
+html,body{
+    overflow-x: hidden;
+}
+
 body{
     line-height: 150%;
     font-weight: 400;
@@ -5,6 +9,11 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: $txt1_main;
     position: relative;
+}
+
+select,option{
+    outline: none;
+    border: none
 }
 
 h1,h2,h3{
@@ -127,6 +136,10 @@ a{
 
 .mb-0{
     margin-bottom: 0 !important;
+}
+
+#form1{
+    margin-bottom: 50px;
 }
 
 @media (max-width: 600px) {

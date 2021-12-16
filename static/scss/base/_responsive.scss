@@ -140,16 +140,46 @@
   }
 
   .tile__title{
-    margin-bottom: 18px;
+    margin-bottom: 4px;
   }
   .tile-table-wrapper{
     width: calc(100% + 48px);
     margin: 0 -24px;
   }
 
-  table td{
-    padding-right: 10px !important;
+  thead td{
+    font-size: 12px;
   }
+
+  .table .cell__user-avatar{
+    margin-right: 12px;
+  }
+
+  .table .cell__info-btn{
+    margin-right: 0;
+  }
+
+  .table__row td{
+    padding: 12px 0;
+  }
+
+  .table__row td:first-child {
+    padding-left: 24px;
+  }
+
+  .table .cell__user-nickname{
+    font-size: 14px;
+  }
+  
+  .tile_tree{
+    padding-bottom: 8px !important;
+  }
+  
+
+  table td{
+    padding-right: 20px !important;
+  }
+
 
   .tile-sponsor{
     
@@ -178,6 +208,14 @@
 
   footer{
     margin: 8px 0 12px 0;
+  }
+
+  .footer-menu{
+    display: none !important;
+  }
+
+  .footer2{
+    margin: 0;
   }
 
 
@@ -356,14 +394,45 @@
   }
 
   .remodal{
-    padding: 32px;
+    padding: 25px;
+  }
+
+  .remodal__title{
+    margin-bottom: 8px;
+  }
+  .remodal__user-nickname{
+    font-size: 20px;
+  }
+  .remodal__user-nickname{
+    margin-bottom: 0;
+    span{
+      margin-bottom: 16px;
+    }
   }
   .modal__btn{
     margin-bottom: 16px;
   }
 
+  .remodal__avatar{
+    width: 96px;
+    height: 96px;
+  }
+
+  .tile-sponsor__invite-contact{
+    margin-bottom: 12px;
+  }
+
+  .remodal .tile-sponsor__contact-key{
+    margin-bottom: 4px;
+  }
+
   .profile__username{
     margin: 16px 0;
+  }
+
+  .remodal__close{
+    top: 14px;
+    right: 14px
   }
 
   .profile__avatar{
@@ -406,6 +475,10 @@
 
   .footer-menu{
     display: none;
+  }
+
+  .with-tile{
+    margin-bottom: 32px;
   }
 
 

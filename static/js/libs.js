@@ -235,7 +235,7 @@ var countryRequesting = false;
                                 this.findChildren(e).each(function (e, t) {
                                     var n = $(t),
                                         i = n.find(".tree-icon");
-                                    n.show(), i.hasClass("tree-opened") && o.showDescs(n);
+                                    n.show('fast'), i.hasClass("tree-opened") && o.showDescs(n);
                                 });
                             },
                         },

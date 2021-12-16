@@ -58,26 +58,26 @@ $(document).ready(function(){
 
     
 
-    $('tbody tr[data-node-id]').each(function(index,item){
-        if(!(index&1)){
-            // item.style.backgroundColor = "#F8F8F8";
-        }
-        $.each(this.attributes, function(i,a){
-            if(a.name=='data-node-id'){
-                if(!(parseInt(a.value.toString().split('.').join('')) & 1)){
+    // $('tbody tr[data-node-id]').each(function(index,item){
+    //     if(!(index&1)){
+    //         // item.style.backgroundColor = "#F8F8F8";
+    //     }
+    //     $.each(this.attributes, function(i,a){
+    //         if(a.name=='data-node-id'){
+    //             if(!(parseInt(a.value.toString().split('.').join('')) & 1)){
 
-                    item.style.backgroundColor = "#F8F8F8";
+    //                 item.style.backgroundColor = "#F8F8F8";
                     
                     
 
-                }
-            }
+    //             }
+    //         }
             
-        })
+    //     })
 
 
         
-    });
+    // });
 
     $('#tree').simpleTreeTable({
         iconPosition:':second',

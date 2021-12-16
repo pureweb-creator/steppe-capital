@@ -5,6 +5,7 @@
     &__head{
         color: $blue1_main;
         border-bottom: 2px solid $grey2_bg;
+        border-collapse: collapse;
 
 
         .table__line{
@@ -12,8 +13,15 @@
         }
     }
 
+    tr{
+        transition: all .3s ease;
+    }
+
     &__row{
+        // display: table-row;
+        border-bottom: 1px solid $grey2_bg;
         &:hover{
+            background: $grey2_bg;
             .cell__user-nickname{
                 color: $blue1_main
             }
@@ -28,6 +36,7 @@
 
         td{
             padding: 16px 0;
+            vertical-align: middle;
         }
         td:first-child{
             padding-left: 32px;
@@ -62,6 +71,7 @@
         }
         &__info-btn{
             margin-right: 13px;
+            cursor: pointer;
         }
         &__expand-btn{
             width: auto;

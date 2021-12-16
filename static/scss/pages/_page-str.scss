@@ -12,3 +12,62 @@
         
     }
 }
+
+.remodal__title{
+    margin-bottom: 12px;
+    line-height: 1.25em;
+    display: block;
+}
+
+.remodal__user-nickname{
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 12px;
+    margin-bottom: 27px;
+    line-height: 1.2em;
+
+    span:first-child{
+        margin-right: 12px;
+        display: inline-block;
+    }
+}
+
+.remodal__avatar{
+    width: 160px;
+    height: 160px;
+    margin-right: 32px;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+.alert{
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.16em;
+}
+
+.alert_not_activated{
+    color: $red_error;
+    background: rgba(255, 64, 64, 0.1);
+}
+
+.alert_activated{
+    color: $blue1_main;
+    background: rgba(94, 185, 232, 0.1);
+}
+
+.tile-sponsor__invite-contact{
+    margin-bottom: 16px;
+}
+
+.remodal__close{
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    z-index: 99999;
+}

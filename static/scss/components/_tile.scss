@@ -9,6 +9,29 @@
     overflow-x: auto;
     width: calc(100% + 64px);
     margin: 0 -32px;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        padding: 0 10px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        border-radius: 4px;
+        background: $grey3_bg;
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $grey1_stroke; 
+        border-radius: 4px;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: darken($grey1_stroke,5); 
+    }
 }
   
 .tile__caption{
@@ -101,4 +124,12 @@
         color: $txt2;
         margin-bottom: 8px;
     }
+}
+
+.tile__title_tree{
+    margin-bottom: 8px;
+}
+
+.with-tile{
+    margin-bottom: 47px;
 }
