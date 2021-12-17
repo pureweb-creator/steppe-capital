@@ -10,16 +10,12 @@
   padding: 16px 0;
   font-size: 12px;
   opacity: .6;
-  text-decoration: underline;
-}
-
-.footer-menu{
-  li:not(:last-child){
-    margin-right: 24px;
+  line-height: 1.2em;
+  a{
+    line-height: inherit;
   }
-  li{
-    &:hover a{
-      text-decoration: underline;
-    }
+
+  a:hover{
+    text-decoration: underline;
   }
 }
