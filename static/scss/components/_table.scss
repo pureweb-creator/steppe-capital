@@ -13,8 +13,17 @@
         }
     }
 
+    tbody{
+        
+    }
+
     tr{
         transition: all .3s ease;
+        height: 50px;
+    }
+
+    td{
+        height: 50px;
     }
 
     &__row{

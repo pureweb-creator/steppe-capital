@@ -1,0 +1,245 @@
+.article{
+    background: #fff;
+    padding: 32px;
+
+
+    img{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    &__title{
+        margin: 34px 0 24px 0;
+        padding-bottom: 24px;
+        border-bottom: 1px solid $grey1_stroke
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+
+    .speakers{
+        margin: 40px 0 48px 0;
+    }
+
+
+    .speakers__item:not(:last-child){
+        margin-bottom: 16px;
+    }
+
+
+    .speakers__item-body{
+        padding: 13px 0;
+    }
+
+    &__subtitle{
+        margin-bottom: 16px;
+        line-height: 1.2;
+    }
+
+    .speakers__item-thumbnail{
+        width: 160px;
+        height: 160px;
+        margin-right: 32px;
+    }
+
+    .speakers__item-title{
+        font-size: 16px;
+        display: block;
+    }
+
+    .speakers__item-subtitle{
+        margin: 8px 0 16px 0;
+        color: $txt2;
+        display: block;
+        font-size: 14px;
+        line-height: 1.2em;
+    }
+
+    .lesson-title{
+        color: $txt1_main;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.2;
+        margin: 32px 0 16px 0
+    }
+
+    .lesson-l{
+        li{
+            border: 2px solid $blue2;
+            padding: 16px;
+            border-radius: 4px;
+            width: calc(50% - 10px);
+            margin-bottom: 8px;
+        }
+    }
+
+    .lesson-mini-title{
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        color: $txt1_main;
+        opacity: .6;
+
+    }
+
+    .article__totals{
+        margin-top: 48px;
+
+
+        .btn{
+            max-width: 313px;
+            width: 313px;
+            text-align: center;
+        }
+    }
+}
+
+.sticky{
+    min-height: 1px;
+    height: 100%;
+    overflow: auto;
+    position: sticky;
+    top: 32px;
+}
+
+.sidebar_article{
+    padding: 24px;
+
+
+    .sidebar__text{
+        margin: 16px 0 24px 0;
+    }
+
+    .card__price{
+        margin-bottom: 24px;
+    }
+    
+    .btn{
+
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.sidebar-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .article{
+        padding: 16px;
+
+        .article__title{
+            margin: 32px 0 24px 0;
+            padding-bottom: 11px;
+        }
+
+        .speakers{
+            margin: 38px 0 32px 0;
+        }
+
+        .speakers__item-body{
+            padding: 0;
+        }
+        .speakers__item-title{
+            font-size: 14px;
+        }
+        .speakers__item-subtitle{
+            font-size: 12px;
+            margin: 0;
+        }
+
+        .speakers__item-text{
+            margin-top: 14px;
+            width: calc(100% + 48px + 16px);
+            margin-left: calc(-48px - 16px);
+        }
+
+        .speakers__item:not(:last-child){
+            margin-bottom: 14px;
+        }
+        p{
+            font-size: 14px;
+        }
+
+        .speakers__item-thumbnail{
+            width: 48px;
+            height: 48px;
+            margin-right: 16px;
+            margin-bottom: 14px;
+        }
+
+        .lesson-l{
+            position: relative;
+            padding-bottom: 26px;
+            &::after{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                left: 0;
+                background: $grey1_stroke;
+                position: absolute;
+                bottom: -0;
+            }
+        }
+
+        .lesson-l li{
+            width: 100%;
+            margin-bottom: 8px;
+            padding: 12px;
+
+        }
+
+        .lesson-mini-title{
+            font-size: 12px;
+        }
+
+        .article__totals{
+            display: none !important;
+        }
+    }
+
+    .sidebar.sidebar_article {
+        display: none;
+    }
+    
+    .sidebar__bottom_sticky{
+        width: 100%;
+
+        padding: 29px 15px;
+        padding-top: 16px;
+        background: #fff;
+        border-radius: 4px;
+    }
+    .sidebar_article .sidebar__text{
+        margin: 12px 0;
+    }
+
+    .sidebar-mobile{
+
+        display: block;
+    }
+
+    .sticky{
+        bottom: 0;
+        top: unset;
+        // box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+
+
+        // padding: 0;
+
+        // margin-left: -15px;
+        // width: calc(100% + 30px);
+        // padding: 0;
+
+        .sidebar-mobile{
+            background: #fff;
+            // padding-left: 31px;
+            // padding-right: 31px;
+        }
+    }
+}

@@ -68,6 +68,28 @@
   }
 }
 
+
+.btn_style4{
+  background: $grey2_bg;
+  padding: 12px 24px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+
+  &:hover{
+    background: $blue2;
+  }
+  &.active{
+    background: $blue2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .btn_style4{
+      font-size: 11px;
+    }
+}
+
+
 .login-btn{
   font-size: 16px;
   text-decoration: underline;

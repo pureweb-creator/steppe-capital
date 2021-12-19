@@ -25,16 +25,41 @@ $(document).ready(function(){
 
     $('#burger').on('click', function(event){
         event.preventDefault();
-        $('.overlay').addClass('active');
+        $('.mobile-menu').parent().addClass('active');
         $('.mobile-menu').addClass('active');
         $('html,body').css("overflow","hidden");
+    });
+
+    $('#cartOpen').on('click', function(event){
+        event.preventDefault();
+        $('.mini-cart').parent().addClass('active');
+        $('.mini-cart').addClass('active');
+        $('html').css({
+            'overflow': 'hidden',
+            'padding-right': '19px'
+        })
+    });
+
+
+    $('#closeMiniCart').on('click', function(event){
+        event.stopPropagation();
+        $(this).parent().parent().removeClass('active');
+        $('.mini-cart').removeClass('active');
+
+        $('html').css({
+            "overflow":"auto",
+            "padding-right": "0"
+        });
     });
 
     $('.overlay').on('click', function(event){
         event.stopPropagation();
         $(this).removeClass('active');
-        $('.mobile-menu').removeClass('active');
-        $('html,body').css("overflow","auto");
+        $('.mobile-menu,.mini-cart').removeClass('active');
+        $('html').css({
+            "overflow":"auto",
+            "padding-right": "0"
+        });
     }).children().click(function(e){
         return false;
     });
@@ -49,6 +74,14 @@ $(document).ready(function(){
 
         $(this).text("Copied!");
     });
+
+    $('.empty').parent().parent().parent().css({
+        'flex-grow': '1',
+        'display': 'flex',
+        'align-items': 'center'
+    });
+
+   
 
     // $('.table__line:not(.table__line_non_active)').on('click', function(event){
     //     event.stopPropagation;
@@ -83,5 +116,40 @@ $(document).ready(function(){
         iconPosition:':second',
         iconTemplate:'<div />'
     });
+
+    $('.grid').masonry({
+        // set itemSelector so .grid-sizer is not used in layout
+        itemSelector: '.grid-item',
+        // use element for option
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+        gutter: 30
+      });
+      $(function() {
+
+        $(".quantity").append('<div class="inc button">+</div>');
+        $(".quantity").prepend('<div class="dec button">-</div>');
+      
+        $(".button").on("click", function() {
+      
+          var $button = $(this);
+          var oldValue = $button.parent().find("input").val();
+      
+          if ($button.text() == "+") {
+              var newVal = parseFloat(oldValue) + 1;
+            } else {
+             // Don't allow decrementing below zero
+            if (oldValue > 0) {
+              var newVal = parseFloat(oldValue) - 1;
+              } else {
+              newVal = 0;
+            }
+            }
+      
+          $button.parent().find("input").val(newVal);
+      
+        });
+      
+      });
         
 });

@@ -1,4 +1,9 @@
 .header{
+  // position: sticky;
+  // top: -80px;
+  // background: #fff;
+  // z-index: 9;
+  // box-shadow: 0px 4px 8px rgba($grey1_stroke, 0.24);
   a{
     font-size: 14px;
   }
@@ -10,7 +15,7 @@
 
 .header_bottom{
   padding: 9px 0 11px 0;
-  border-top: 2px solid $grey2_bg 
+  border-top: 2px solid $grey2_bg ;
 }
 
 .logo{
@@ -27,6 +32,7 @@
 }
 .header__cart{
   margin: 0 30px 0 32px;
+  cursor: pointer;
 
   &-count{
     width: 29px;

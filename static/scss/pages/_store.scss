@@ -1,0 +1,20 @@
+.shop-filter{
+    margin-top: 24px;
+}
+
+.shop-filter__btn{
+    margin-right: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .shop-filter{
+        margin-top: 16px;
+    }
+    .shop-filter__btn{
+        margin-right: 18px;
+        margin-bottom: 16px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
