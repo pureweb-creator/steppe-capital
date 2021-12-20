@@ -81,6 +81,7 @@ $(document).ready(function(){
             "overflow":"auto",
             "padding-right": "0"
         });
+        $('body').css('overflow','unset');
     }).children().click(function(e){
         return false;
     });
