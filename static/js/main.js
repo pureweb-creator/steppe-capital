@@ -34,10 +34,20 @@ $(document).ready(function(){
         event.preventDefault();
         $('.mini-cart').parent().addClass('active');
         $('.mini-cart').addClass('active');
-        $('html').css({
-            'overflow': 'hidden',
-            'padding-right': '19px'
-        })
+
+        if ($(document).height() > $(window).height()) {
+
+            $('html').css({
+                'overflow': 'hidden',
+                'padding-right': '19px'
+            })
+        }
+        else{
+            $('html').css({
+                'overflow': 'hidden',
+                'padding-right': '1px'
+            })
+        }
     });
 
 
