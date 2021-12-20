@@ -30,6 +30,17 @@ $(document).ready(function(){
         $('html,body').css("overflow","hidden");
     });
 
+
+    $(window).scroll(function(){
+        console.log($('.sticky').offset().top);
+        console.log($(window).scrollTop() + $(window).height());
+        if( $(window).scrollTop()+$(window).height() < $('.sticky').offset().top + 125 ){
+            $('#sidebarMobile').addClass('isSticky');
+        } else {
+            $('#sidebarMobile').removeClass('isSticky');
+        }
+    });
+
     $('#cartOpen').on('click', function(event){
         event.preventDefault();
         $('.mini-cart').parent().addClass('active');
