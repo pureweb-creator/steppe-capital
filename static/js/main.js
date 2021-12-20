@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 
     $(window).scroll(function(){
-        if( $(window).scrollTop()+$(window).height() < $('.sticky').offset().top + 125 ){
+        if( $(window).scrollTop()+$(window).height() <= $('.sticky').offset().top + 70 ){
             $('#sidebarMobile').addClass('isSticky');
         } else {
             $('#sidebarMobile').removeClass('isSticky');
