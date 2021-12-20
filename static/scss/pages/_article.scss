@@ -101,7 +101,7 @@
     min-height: 1px;
     height: 100%;
     overflow: auto;
-    // position: sticky;
+    position: sticky;
     top: 32px;
     min-height: 125px;
 }
@@ -141,6 +141,10 @@
 }
 
 @media screen and (max-width: 600px){
+    
+    .sticky{
+        position: static;
+    }
     .article{
         padding: 16px;
 
