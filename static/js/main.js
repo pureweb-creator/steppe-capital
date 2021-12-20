@@ -75,7 +75,7 @@ $(document).ready(function(){
         event.stopPropagation();
         $(this).removeClass('active');
         $('.mobile-menu,.mini-cart').removeClass('active');
-        $('html').css({
+        $('html,body').css({
             "overflow":"auto",
             "padding-right": "0"
         });
