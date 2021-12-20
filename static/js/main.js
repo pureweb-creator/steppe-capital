@@ -32,8 +32,6 @@ $(document).ready(function(){
 
 
     $(window).scroll(function(){
-        console.log($('.sticky').offset().top);
-        console.log($(window).scrollTop() + $(window).height());
         if( $(window).scrollTop()+$(window).height() < $('.sticky').offset().top + 125 ){
             $('#sidebarMobile').addClass('isSticky');
         } else {
@@ -81,7 +79,6 @@ $(document).ready(function(){
             "overflow":"auto",
             "padding-right": "0"
         });
-        $('body').css('overflow','unset');
     }).children().click(function(e){
         return false;
     });
