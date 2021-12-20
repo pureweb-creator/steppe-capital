@@ -75,10 +75,11 @@ $(document).ready(function(){
         event.stopPropagation();
         $(this).removeClass('active');
         $('.mobile-menu,.mini-cart').removeClass('active');
-        $('html,body').css({
+        $('html').css({
             "overflow":"auto",
             "padding-right": "0"
         });
+        $('body').css('overflow','unset');
     }).children().click(function(e){
         return false;
     });
