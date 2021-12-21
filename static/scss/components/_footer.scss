@@ -12,10 +12,11 @@
   opacity: .6;
   line-height: 1.2em;
   a{
+    text-decoration: underline;
     line-height: inherit;
   }
 
   a:hover{
-    text-decoration: underline;
+    text-decoration: unset;
   }
 }
