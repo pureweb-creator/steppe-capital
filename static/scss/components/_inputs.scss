@@ -30,7 +30,7 @@
 }
 
 
-.input-group__input{
+.input-group__input,.input-group__select{
   padding: 12px 16px;
   border-radius: 4px;
   border: 1px solid $grey1_stroke;
@@ -49,6 +49,16 @@
 
   &.error{
     border-color: $red_error
+  }
+}
+
+.input-group_select{
+  // color: $txt2;
+  font-family: inherit;
+  background: url("../img/arrow-down.svg") no-repeat 95% center;
+
+  option{
+    padding: 10px;
   }
 }
 

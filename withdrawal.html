@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  	<meta name="robots" content="index,follow,noodp">
+  	<meta name="googlebot" content="index,follow">
+  	<!-- <meta property="og:locale" content="ru_RU"> -->
+      
+    <!-- fonts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" href="static/css/bootstrap-grid.min.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" href="static/css/main.min.css">
+    <noscript><link rel="stylesheet" href="static/css/bootstrap-grid.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="static/css/main.min.css"></noscript>
+
+    <title>BALANCE / WITHDRAWAL</title>
+</head>
+<body>
+
+<!-- Mobile menu -->
+<div class="overlay">
+    <div class="mobile-menu">
+        <div class="mobile-menu__top">
+            <div class="mobile-menu__profile-info d-flex flex-nowrap">
+                <img src="static/img/user-avatar.jpg" class="profile-mini__avatar" alt="">
+                <div>
+                    <span class="mobile-menu__profile-name">beauty777</span>
+                    <a href="mailto:beauty777@mail.com" class="mobile-menu__profile-email">beauty777@mail.com</a>
+                </div>
+            </div>
+        </div>
+        <nav class="mobile-menu__nav main-nav">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item main-nav__item"><a href="#">Profile</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Settings</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Log out</a></li>
+            </ul>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item main-nav__item"><a href="#">Main</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Shop</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Education</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Signals <span>new</span></a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Structure</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Statistics</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">News</a></li>
+            </ul>
+            <div class="mobile-menu__list">
+                <h4 class="mobile-menu__title">language</h4>
+                <select class="mobile-menu__language">
+                    <option class="" value="en">Eng</option>
+                    <option class="" value="en">Ru</option>
+                    <option class="" value="en">Ua</option>
+                </select>
+            </div>
+            <ul class="mobile-menu__list mobile-menu__list_last">
+                <h4 class="mobile-menu__title">Contact Us</h4>
+                <li class="mobile-menu__item"><a href="mailto:mail@steppe.capital">mail@steppe.capital</a></li>
+                <li class="mobile-menu__item"><a href="tel:+71234567890">+7 123 456 78 90</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Mini cart -->
+<div class="overlay">
+    <div class="mini-cart">
+        <a href="#!" class="mini-cart__close" id="closeMiniCart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#909090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#909090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <h3 class="mini-cart__title">YOUR CART</h3>
+        
+        <div>
+            <div class="mini-cart__item">
+                <img src="static/img/shop-img1.jpg" alt="" class="mini-cart__thumbnail">
+                <div class="mini-cart__body">
+                    <h4 class="mini-cart__item-title">From zero to trader</h4>
+                    <p class="mini-cart__item-desc">
+                        Training course that teaches you how to trade and make money in the cryptocurrency markets.
+                    </p>
+    
+                    <footer class="mini-cart__item-footer">
+                        <div class="card__price">
+                            <span>500</span> USD(T)
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity">
+                                <input type="text" name="french-hens" id="french-hens2" value="3">
+                            </div>
+                            <div class="remove">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6H5H21" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 11V17" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14 11V17" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="mini-cart__item">
+                <img src="static/img/shop-img2.jpg" alt="" class="mini-cart__thumbnail">
+                <div class="mini-cart__body">
+                    <h4 class="mini-cart__item-title">Trading signals (1 month)</h4>
+                    <p class="mini-cart__item-desc">
+                        1 month subscription to receive signals.
+                    </p>
+    
+                    <footer class="mini-cart__item-footer">
+                        <div class="card__price">
+                            <span>300</span> USD(T)
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity">
+                                <input type="text" name="french-hens" id="french-hens2" value="3">
+                            </div>
+                            <div class="remove">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6H5H21" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 11V17" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14 11V17" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini-cart__subtotal d-flex align-items-center justify-content-between">
+            <span class="mini-cart__subtotal-title">Subtotal:</span>
+            <div class="card__price">
+                <span>800</span> USD(T)
+            </div>
+        </div>
+
+        <a href="#" class="btn btn_style1 mini-cart__checkout-btn">Checkout</a>
+        <a href="#" class="btn card__learn-more">View cart</a>
+    </div>
+</div>
+
+<header class="header">
+    <div class="container">
+        <div class="header_top"> 
+            <div class="row align-items-center">
+                <div class="col-3 burger mr-auto">
+                    <a href="#" id="burger">
+                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="black"/>
+                        </svg>                                
+                    </a>
+                </div>
+                <div class="col-lg-2 col-4 text-center">
+                    <a href="/" class="logo"><img src="static/img/LOGO%20Steppe.svg" alt="home logo"></a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-3 d-flex align-items-center ml-auto">
+                    <div class="header__lang dropdown">
+                        <a href="#" class="dropdown__current d-flex align-items-center justify-content-end">
+                            Eng
+                            <svg class="dropdown__icon" width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0L5 5L10 0H0Z" fill="#151515"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__item"><a href="#">Language_1</a></li>
+                            <li class="dropdown__item"><a href="#">Language_2</a></li>
+                            <li class="dropdown__item"><a href="#">Language_3</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="cart header__cart d-flex flex-nowrap" id="cartOpen">
+                        <img src="static/img/icon-basket.svg" alt="">
+                        <span class="cart__count header__cart-count">2</span>
+                    </div>
+
+                    <div class="profile-mini dropdown d-flex align-items-center">
+                        <span class="profile-mini__name">beauty777</span>
+                        <img src="static/img/user-avatar.webp" alt="Avatar" class="profile-mini__avatar lazy">
+                        <img src="static/img/arrow-down.png" alt="arrow" class="profile-mini__arrow">
+
+                        <div class="">
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item"><a href="index.html">Profile</a></li>
+                                <li class="dropdown__item"><a href="settings.html">Settings</a></li>
+                                <li class="dropdown__item"><a href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <nav class="main-nav">
+                        <ul class="main-nav__menu d-flex align-items-center">
+                            <li class="main-nav__item"><a href="#">Main</a></li>
+                            <li class="main-nav__item"><a href="#">Shop</a></li>
+                            <li class="main-nav__item"><a href="#">Education</a></li>
+                            <li class="main-nav__item"><a href="#">Signals <span>new</span></a></li>
+                            <li class="main-nav__item active"><a href="#">Structure</a></li>
+                            <li class="main-nav__item"><a href="#">Statistics</a></li>
+                            <li class="main-nav__item"><a href="#">News</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-4  ml-auto">
+                    <form action="" method="GET" class="search-form header__search-form">
+                        <div class="input-group d-flex align-items-center flex-nowrap">
+                            <input type="text" class="input-group__input search-form__input" placeholder="Search">
+                            <button class="search-form__btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#151515" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#151515" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                    </svg>                                                                     
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="page page_profile" id="withdrawal">
+    <!-- Add credit card  -->
+    <div class="remodal modal" data-remodal-id="add_card">
+        <h4 class="modal__title text-left">Add new card</h4>
+        <form action="" method="POST" @submit.prevent="addCard">
+            <div class="input-group">
+                <label for="bankName" class="input-group__label">Bank</label>
+                <input v-model="bankName" required type="text" name="bankName" id="bankName" class="input-group__input" placeholder="Bank name">
+            </div>
+            <div class="input-group">
+                <label for="cardNumber" class="input-group__label">Card number</label>
+                <input v-model="cardNumber" required type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" autocomplete="cc-number" name="cardNumber" id="cardNumber" class="input-group__input" placeholder="XXXX  XXXX  XXXX  XXXX">
+            </div>
+            <div class="input-group">
+                <label for="cardholderName" class="input-group__label">Cardholder name</label>
+                <input v-model="cardholderName" required type="text" autocomplete="cc-given-name" name="cardholderName" id="cardholderName" class="input-group__input" placeholder="Cardholder name">
+            </div>
+            <div class="input-group">
+                <label for="cardholderSurname" class="input-group__label">Cardholder surname</label>
+                <input v-model="cardholderSurname" required type="text" autocomplete="cc-family-name" name="cardholderSurname" id="cardholderSurname" class="input-group__input" placeholder="Cardholder surname">
+            </div>
+            <div class="input-group submit-form-buttons d-flex justify-content-between align-items-center" style="width: 100%">
+                <label for="setAsDefault" class="custom-checkbox d-flex">
+                    <input class="custom-checkbox__input" v-model="isDefault" type="checkbox" id="setAsDefault" name="setAsDefault">
+                    <span class="custom-checkbox__icon">
+                        <span class="custom-checkbox__fill"></span>
+                    </span>
+                    <div class="custom-checkbox__label">Set as default card</div>
+                </label>
+            </div>
+            <div class="input-group submit-form-buttons d-iflex text-left align-items-center mb-0" style="width: 100%">
+                <button type="submit" class="btn btn_style1 modal__btn">Save</button>
+                <button class="btn btn_style3" data-remodal-action="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="page_str__offer">
+            <h1 class="offer__title h3">BALANCE / WITHDRAWAL</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 with-tile">
+                <div class="tile tile_theme_sky">
+                    <h4 class="d-flex align-items-center tile__title">Avilable for withdrawal
+                        <svg style="margin-left: 9px" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM11 17H9V15H11V17ZM13.07 9.25L12.17 10.17C11.45 10.9 11 11.5 11 13H9V12.5C9 11.4 9.45 10.4 10.17 9.67L11.41 8.41C11.78 8.05 12 7.55 12 7C12 5.9 11.1 5 10 5C8.9 5 8 5.9 8 7H6C6 4.79 7.79 3 10 3C12.21 3 14 4.79 14 7C14 7.88 13.64 8.68 13.07 9.25Z" fill="white"/>
+                        </svg>
+                    </h4>
+
+                    <div class="tile__balance">
+                        <span class="tile__balance-caption little-title">Balance amount</span>
+                        <div class="tile__balance-amount">2300 <span>usd(t)</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6  with-tile">
+                <div class="tile">
+                    <h4 class="d-flex align-items-center tile__title">Withdrawal conditions
+                        <svg style="margin-left: 9px" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM11 17H9V15H11V17ZM13.07 9.25L12.17 10.17C11.45 10.9 11 11.5 11 13H9V12.5C9 11.4 9.45 10.4 10.17 9.67L11.41 8.41C11.78 8.05 12 7.55 12 7C12 5.9 11.1 5 10 5C8.9 5 8 5.9 8 7H6C6 4.79 7.79 3 10 3C12.21 3 14 4.79 14 7C14 7.88 13.64 8.68 13.07 9.25Z" fill="#D6D6D6"/>
+                        </svg>                            
+                    </h4>
+
+                    <p>Please note that the withdrawal operation is performed every Thursday. You can order withdrawals any day.</p>
+                    <p>In this case, if you ordered the withdrawal on Wednesday, the transfer will be made the next day on Thursday.</p>
+                    <p>If the order is ordered on Thursday, it will be postponed to the next week.</p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="tile tile_withdrawal" :class="(withdrawalMethod=='choose') ? '': 'tile_withdrawal-expanded' ">
+                    <h4 class="d-flex align-items-center tile__title tile__title_withdrawal">Withdrawal
+                        <svg style="margin-left: 9px" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM11 17H9V15H11V17ZM13.07 9.25L12.17 10.17C11.45 10.9 11 11.5 11 13H9V12.5C9 11.4 9.45 10.4 10.17 9.67L11.41 8.41C11.78 8.05 12 7.55 12 7C12 5.9 11.1 5 10 5C8.9 5 8 5.9 8 7H6C6 4.79 7.79 3 10 3C12.21 3 14 4.79 14 7C14 7.88 13.64 8.68 13.07 9.25Z" fill="#D6D6D6"/>
+                        </svg>                            
+                    </h4>
+
+                    <div class="withdrawal">
+                        <div class="d-flex justify-content-between withdrawal__inner">
+                            <div class="input-group d-flex flex-nowrap">
+                                <label for="withdrawalAmount" class="input-group__label">
+                                    Amount
+                                    <span>You have to withdraw</span>
+                                </label>
+                                <input type="number" placeholder="0" name="withdrawal_amount" class="input-group__input">
+                                <span class="input-group__input-element">USD(T)</span>
+                            </div>
+                            <div class="input-group d-flex flex-nowrap">
+                                <label for="withdrawalAmount" class="input-group__label">
+                                    Method
+                                    <span>For withdraw</span>
+                                </label>
+                                <select name="withdrawal_method" class="input-group__input input-group_select" v-model="withdrawalMethod"> 
+                                    <option value="choose">Choose</option>
+                                    <option value="bankcard">Bank card</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="withdrawal-hidden" v-if="withdrawalMethod=='bankcard'">
+                            <div class="withdrawal__inner">
+                                <div class="input-group d-flex flex-nowrap justify-content-start w-100">
+                                    <label for="withdrawalAmount" class="input-group__label">
+                                        Added cards
+                                        <span>Choose a card for transfer</span>
+                                    </label>
+                                    <div class="withdrawal__added-cards d-flex flex-nowrap">
+                                        <a href="#add_card" type="button" :class="{shrinked: addedCards.length!=0}" class="withdrawal__add-card">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="#C4C4C4"/>
+                                            </svg>                                        
+                                        </a>
+                                        <ul class="cc-list" v-if="addedCards.length!=0">
+                                            <li v-for="(item, index) in addedCards" class="cc-list__item">
+                                                <header class="cc-item__top d-flex justify-content-between align-items-center">
+                                                    <img src="static/img/visa.svg" alt="credit card logo">
+                                                    <div class="context-menu">
+                                                        <a href="#" class="context-menu__btn">
+                                                            <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4 2C4 0.9 3.1 -1.35505e-07 2 -8.74228e-08C0.9 -3.93402e-08 -1.35505e-07 0.9 -8.74228e-08 2C-3.93402e-08 3.1 0.9 4 2 4C3.1 4 4 3.1 4 2ZM6 2C6 3.1 6.9 4 8 4C9.1 4 10 3.1 10 2C10 0.9 9.1 -3.97774e-07 8 -3.49691e-07C6.9 -3.01609e-07 6 0.9 6 2ZM12 2C12 3.1 12.9 4 14 4C15.1 4 16 3.1 16 2C16 0.899999 15.1 -6.60042e-07 14 -6.11959e-07C12.9 -5.63877e-07 12 0.9 12 2Z" fill="#151515"/>
+                                                            </svg>
+                                                        </a>      
+                                                        <ul class="context-menu__list">
+                                                            <li class="context-menu__item">Choose as default</li>
+                                                            <li class="context-menu__item" @click="deleteCard(index)">Delete</li>
+                                                        </ul>
+                                                    </div>
+                                                </header>
+                                                <div class="cc-item__body">
+                                                    <div class="cc-item__name">{{ item.ccGivenName }} {{ item.ccFamilyName }}</div>
+                                                    <div class="cc-item__card">{{ item.ccNumberHidden }}</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between withdrawal__inner">
+                                <div class="input-group d-flex flex-nowrap">
+                                    <label for="withdrawalBank" class="input-group__label">
+                                        Bank
+                                        <span>Choose your bank</span>
+                                    </label>
+                                    <input type="text" placeholder="Bank name" name="withdrawalBank" class="input-group__input">
+                                </div>
+                                <div class="input-group d-flex flex-nowrap">
+                                    <label for="withdrawalCard" class="input-group__label">
+                                        Card Number
+                                        <span>Enter 16-digit card number</span>
+                                    </label>
+                                    <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" autocomplete="cc-number" name="withdrawalCard" id="cardNumber" class="input-group__input" placeholder="XXXX  XXXX  XXXX  XXXX">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between withdrawal__inner">
+                                <div class="input-group d-flex flex-nowrap">
+                                    <label for="withdrawalName" class="input-group__label">
+                                        Cardholder name
+                                        <span>Enter your name</span>
+                                    </label>
+                                    <input type="text" placeholder="Name" name="withdrawalName" class="input-group__input">
+                                </div>
+                                <div class="input-group d-flex flex-nowrap">
+                                    <label for="withdrawalCard" class="input-group__label">
+                                        Cardholder surname
+                                        <span>Enter your surname</span>
+                                    </label>
+                                    <input type="text" name="Surname" id="withdrawalCard" class="input-group__input" placeholder="Surname">
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn_style1 withdrawal__btn">Continue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer2">
+    <div class="container d-flex align-items-center justify-content-between">
+        <p class="d-flex align-items-center">© 2021 Steppe Capital&nbsp;|&nbsp;<a href="#">Disclaimer</a></p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="static/js/libs.js"></script>
+<script src="static/js/main.js"></script>
+
+
+<script>
+    
+    new Vue({
+        el: "#withdrawal",
+        data() {
+            return{
+                // defaults
+                withdrawalMethod: "bankcard",
+                addedCards: [],
+                bankName: 'monobank',
+                cardNumber: '5168757384426476',
+                cardNumberHidden: '',
+                cardholderName: 'Roman',
+                cardholderSurname: 'Semenikhin',
+                isDefault: false
+            }
+        },
+        methods: {
+            addCard: function(){
+
+                this.cardNumberHidden = this.cardNumber.slice(0,4)+" xxxx xxxx "+this.cardNumber.slice(12)
+
+                this.addedCards.push({
+                    bankName: this.bankName,
+                    ccNumber: this.cardNumber,
+                    ccNumberHidden: this.cardNumberHidden,
+                    ccGivenName: this.cardholderName,
+                    ccFamilyName: this.cardholderSurname
+                });
+
+
+                // document.location.reload()
+
+                this.bankName = this.cardNumber = this.cardholderName = this.cardholderSurname = ""
+            },
+            deleteCard: function(index){
+                this.addedCards.splice(index,1)
+            }
+        }
+    });
+</script>
+</body>
+</html>

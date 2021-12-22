@@ -3,31 +3,42 @@
     background: #fff;
     border-radius: 4px;
     height: 100%;
+
+    p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    p:not(:last-child){
+        margin-bottom: 12px
+    }
 }
 
 .tile-table-wrapper{
     overflow-x: auto;
     width: calc(100% + 64px);
     margin: 0 -32px;
+}
 
+.tile-table-wrapper,.cc-list{
     &::-webkit-scrollbar {
         width: 6px;
         height: 6px;
         padding: 0 10px;
     }
-    
+
     /* Track */
     &::-webkit-scrollbar-track {
         border-radius: 4px;
         background: $grey3_bg;
     }
-    
+
     /* Handle */
     &::-webkit-scrollbar-thumb {
         background: $grey1_stroke; 
         border-radius: 4px;
     }
-    
+
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
         background: darken($grey1_stroke,5); 
@@ -132,4 +143,40 @@
 
 .with-tile{
     margin-bottom: 47px;
+}
+
+.tile_theme_sky{
+    background-image: url("../img/pattern.svg"), linear-gradient(103.75deg, #5EB9E8 0%, #A4DEFC 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    color: #fff;
+    .tile__title:hover{
+        svg path{
+            fill: #fff
+        }
+    }
+}
+
+.tile__balance{
+    margin-top: 91px;
+}
+
+.tile__balance-caption{
+    margin-bottom: 12px;
+    display: block;
+}
+.tile__balance-amount{
+    font-size: 48px;
+    line-height: 1.2;
+    display: flex;
+
+    span{
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-left: 16px;
+        display: block;
+        margin-top: 7px;
+    }
 }
