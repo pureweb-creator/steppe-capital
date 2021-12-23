@@ -33,6 +33,7 @@
   transform: scale(1.05);
   opacity: 0;
   visibility: hidden;
+  padding: 0 15px;
 
   &[show="true"]{
     transform: scale(1);
