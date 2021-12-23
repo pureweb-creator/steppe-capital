@@ -163,9 +163,9 @@
                 <div class="col-lg-2 col-4 text-center">
                     <a href="/" class="logo"><img src="static/img/LOGO%20Steppe.svg" alt="home logo"></a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-3 d-flex align-items-center ml-auto">
+                <div class="col-lg-6 col-md-4 col-3 d-flex align-items-center ml-auto">
                     <div class="header__lang dropdown">
-                        <a href="#" class="dropdown__current d-flex align-items-center justify-content-end">
+                        <a href="#!" class="dropdown__current d-flex align-items-center justify-content-end">
                             Eng
                             <svg class="dropdown__icon" width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 0L5 5L10 0H0Z" fill="#151515"/>
@@ -234,40 +234,43 @@
 
 <main class="page page_profile" id="withdrawal">
     <!-- Add credit card  -->
-    <div class="remodal modal" data-remodal-id="add_card">
-        <h4 class="modal__title text-left">Add new card</h4>
-        <form action="" method="POST" @submit.prevent="addCard">
-            <div class="input-group">
-                <label for="bankName" class="input-group__label">Bank</label>
-                <input v-model="bankName" required type="text" name="bankName" id="bankName" class="input-group__input" placeholder="Bank name">
-            </div>
-            <div class="input-group">
-                <label for="cardNumber" class="input-group__label">Card number</label>
-                <input v-model="cardNumber" required type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" autocomplete="cc-number" name="cardNumber" id="cardNumber" class="input-group__input" placeholder="XXXX  XXXX  XXXX  XXXX">
-            </div>
-            <div class="input-group">
-                <label for="cardholderName" class="input-group__label">Cardholder name</label>
-                <input v-model="cardholderName" required type="text" autocomplete="cc-given-name" name="cardholderName" id="cardholderName" class="input-group__input" placeholder="Cardholder name">
-            </div>
-            <div class="input-group">
-                <label for="cardholderSurname" class="input-group__label">Cardholder surname</label>
-                <input v-model="cardholderSurname" required type="text" autocomplete="cc-family-name" name="cardholderSurname" id="cardholderSurname" class="input-group__input" placeholder="Cardholder surname">
-            </div>
-            <div class="input-group submit-form-buttons d-flex justify-content-between align-items-center" style="width: 100%">
-                <label for="setAsDefault" class="custom-checkbox d-flex">
-                    <input class="custom-checkbox__input" v-model="isDefault" type="checkbox" id="setAsDefault" name="setAsDefault">
-                    <span class="custom-checkbox__icon">
-                        <span class="custom-checkbox__fill"></span>
-                    </span>
-                    <div class="custom-checkbox__label">Set as default card</div>
-                </label>
-            </div>
-            <div class="input-group submit-form-buttons d-iflex text-left align-items-center mb-0" style="width: 100%">
-                <button type="submit" class="btn btn_style1 modal__btn">Save</button>
-                <button class="btn btn_style3" data-remodal-action="cancel">Cancel</button>
-            </div>
-        </form>
+    <div class="modal-wrap" :show="visible" @click.self="visible = false">
+        <div class="modal">
+            <h4 class="modal__title text-left">Add new card</h4>
+            <form action="" method="POST" @submit.prevent="addCard">
+                <div class="input-group">
+                    <label for="bankName" class="input-group__label">Bank</label>
+                    <input v-model="bankName" required type="text" name="bankName" id="bankName" class="input-group__input" placeholder="Bank name">
+                </div>
+                <div class="input-group">
+                    <label for="cardNumber" class="input-group__label">Card number</label>
+                    <input v-model="cardNumber" required type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" autocomplete="cc-number" name="cardNumber" id="cardNumber" class="input-group__input" placeholder="XXXX  XXXX  XXXX  XXXX">
+                </div>
+                <div class="input-group">
+                    <label for="cardholderName" class="input-group__label">Cardholder name</label>
+                    <input v-model="cardholderName" required type="text" autocomplete="cc-given-name" name="cardholderName" id="cardholderName" class="input-group__input" placeholder="Cardholder name">
+                </div>
+                <div class="input-group">
+                    <label for="cardholderSurname" class="input-group__label">Cardholder surname</label>
+                    <input v-model="cardholderSurname" required type="text" autocomplete="cc-family-name" name="cardholderSurname" id="cardholderSurname" class="input-group__input" placeholder="Cardholder surname">
+                </div>
+                <div class="input-group submit-form-buttons d-flex justify-content-between align-items-center" style="width: 100%">
+                    <label for="setAsDefault" class="custom-checkbox d-flex">
+                        <input class="custom-checkbox__input" v-model="isDefault" type="checkbox" id="setAsDefault" name="setAsDefault">
+                        <span class="custom-checkbox__icon">
+                            <span class="custom-checkbox__fill"></span>
+                        </span>
+                        <div class="custom-checkbox__label">Set as default card</div>
+                    </label>
+                </div>
+                <div class="input-group submit-form-buttons d-iflex text-left align-items-center mb-0" style="width: 100%">
+                    <button type="submit" class="btn btn_style1 modal__btn">Save</button>
+                    <button type="button" class="btn btn_style3" @click="visible = false">Cancel</button>
+                </div>
+            </form>
+        </div>
     </div>
+    
     <div class="container">
         <div class="page_str__offer">
             <h1 class="offer__title h3">BALANCE / WITHDRAWAL</h1>
@@ -337,23 +340,23 @@
                                         <span>Choose a card for transfer</span>
                                     </label>
                                     <div class="withdrawal__added-cards d-flex flex-nowrap">
-                                        <a href="#add_card" type="button" :class="{shrinked: addedCards.length!=0}" class="withdrawal__add-card">
+                                        <a href="#!" @click="visible = true" type="button" :class="{shrinked: addedCards.length!=0}" class="withdrawal__add-card">
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="#C4C4C4"/>
                                             </svg>                                        
                                         </a>
                                         <ul class="cc-list" v-if="addedCards.length!=0">
-                                            <li v-for="(item, index) in addedCards" class="cc-list__item">
+                                            <li v-for="(item, index) in addedCards" class="cc-list__item" :class="{default: item.ccDefault}">
                                                 <header class="cc-item__top d-flex justify-content-between align-items-center">
                                                     <img src="static/img/visa.svg" alt="credit card logo">
                                                     <div class="context-menu">
-                                                        <a href="#" class="context-menu__btn">
+                                                        <a href="#!" class="context-menu__btn">
                                                             <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <path d="M4 2C4 0.9 3.1 -1.35505e-07 2 -8.74228e-08C0.9 -3.93402e-08 -1.35505e-07 0.9 -8.74228e-08 2C-3.93402e-08 3.1 0.9 4 2 4C3.1 4 4 3.1 4 2ZM6 2C6 3.1 6.9 4 8 4C9.1 4 10 3.1 10 2C10 0.9 9.1 -3.97774e-07 8 -3.49691e-07C6.9 -3.01609e-07 6 0.9 6 2ZM12 2C12 3.1 12.9 4 14 4C15.1 4 16 3.1 16 2C16 0.899999 15.1 -6.60042e-07 14 -6.11959e-07C12.9 -5.63877e-07 12 0.9 12 2Z" fill="#151515"/>
                                                             </svg>
                                                         </a>      
                                                         <ul class="context-menu__list">
-                                                            <li class="context-menu__item">Choose as default</li>
+                                                            <li class="context-menu__item" @click="setDefault(index)">Choose as default</li>
                                                             <li class="context-menu__item" @click="deleteCard(index)">Delete</li>
                                                         </ul>
                                                     </div>
@@ -421,24 +424,51 @@
 
 
 <script>
+
+    // Vue.component('modal', {
+    //     template: '#modal-window',
+    //     data(){
+    //         return{
+    //             // defaults
+    //             withdrawalMethod: "choose",
+    //             addedCards: [],
+    //             bankName: 'monobank',
+    //             cardNumber: '5168757384426476',
+    //             cardNumberHidden: '',
+    //             cardholderName: 'Roman',
+    //             cardholderSurname: 'Semenikhin',
+    //             isDefault: false,
+
+    //             //modal
+    //             visible: false
+    //         }
+    //     }
+    // });
     
     new Vue({
         el: "#withdrawal",
         data() {
             return{
                 // defaults
-                withdrawalMethod: "bankcard",
+                withdrawalMethod: "choose",
                 addedCards: [],
                 bankName: 'monobank',
                 cardNumber: '5168757384426476',
                 cardNumberHidden: '',
                 cardholderName: 'Roman',
                 cardholderSurname: 'Semenikhin',
-                isDefault: false
+                isDefault: false,
+
+                //modal
+                visible: false
             }
         },
         methods: {
             addCard: function(){
+
+                this.addedCards.forEach(element => {
+                    if(this.isDefault==true) element.ccDefault = false
+                });
 
                 this.cardNumberHidden = this.cardNumber.slice(0,4)+" xxxx xxxx "+this.cardNumber.slice(12)
 
@@ -447,9 +477,12 @@
                     ccNumber: this.cardNumber,
                     ccNumberHidden: this.cardNumberHidden,
                     ccGivenName: this.cardholderName,
-                    ccFamilyName: this.cardholderSurname
+                    ccFamilyName: this.cardholderSurname,
+                    ccDefault: this.isDefault
                 });
 
+
+                this.visible = false
 
                 // document.location.reload()
 
@@ -457,6 +490,13 @@
             },
             deleteCard: function(index){
                 this.addedCards.splice(index,1)
+            },
+            setDefault: function(index){
+                this.addedCards.forEach(element => {
+                    element.ccDefault = false
+                });
+
+                this.addedCards[index].ccDefault = true;
             }
         }
     });

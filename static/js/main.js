@@ -170,5 +170,37 @@ $(document).ready(function(){
         });
       
       });
+
+
+      $("#datepickerFrom").datepicker({
+        nextText: '>',
+        prevText: '<',
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        dayNamesMin: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+        firstDay: 1,
+        dateFormat: "dd.mm.yy"
+      });
+
+      $("#datepickerTo").datepicker({
+        nextText: '>',
+        prevText: '<',
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        dayNamesMin: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+        firstDay: 1,
+        dateFormat: "dd.mm.yy"
+      });
+
+      $("#datepickerFrom").datepicker({
+        beforeShow: function(input, inst) {
+            setTimeout(function () {
+                inst.dpDiv.css({
+                    top: 100,
+                    left: offsets.left,
+                });
+            });
+        }
+    });
         
 });

@@ -1,0 +1,100 @@
+.ui-datepicker{
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(21, 21, 21, 0.12);
+    border-radius: 4px;
+    padding: 20px;
+    width: 289px;
+    max-width: 289px;
+
+    .ui-datepicker-calendar{
+        width: 100%;
+
+
+        thead{
+            th{
+                padding-bottom: 10px;
+            }
+            span{
+                color: $txt2;
+                font-size: 10px;
+                line-height: 1.2em;
+                font-weight: 600;
+            }
+        }
+    }
+
+    tr{
+        text-align: center;
+    }
+
+    .ui-datepicker-header{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .ui-priority-secondary{
+        color: $txt2;
+    }
+
+    .ui-state-default{
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        border-radius: 4px;
+        // transition: all .3s ease;
+        &:hover{
+            color: #fff;
+            background: $blue1_main;
+        }
+    }
+
+    .ui-datepicker-title{
+        order: -1;
+        margin-right: auto;
+    }
+
+    .ui-datepicker-prev span {
+        background-image: url('../img/datepickerprev.svg') !important;
+        background-repeat: no-repeat;
+            background-position: 0px 0px !important;
+            color: transparent;
+            margin-right: 22px;
+            cursor: pointer;
+    }
+    
+    .ui-datepicker-next span {
+        background-repeat: no-repeat;
+        color:transparent;
+        cursor: pointer;
+
+        background-image: url('../img/datepickernext.svg') !important;
+            background-position: 0px 0px !important;
+    }
+}
+
+svg path{
+    transition: all .3s ease;
+}
+
+.input-group__input_datetime{
+    padding: 12px 38px 12px 16px;
+    margin-left: 12px;
+    max-width: 134px;
+    border-color: $grey1_stroke;
+
+    &:hover,&:active,&:focus{
+        border-color: $blue2;
+
+        &+.input-group__input-element svg path{
+            fill: $blue1_main
+        }
+    }
+}
+
+
+
+
+.datepicker__item{
+    margin-right: 12px;
+}

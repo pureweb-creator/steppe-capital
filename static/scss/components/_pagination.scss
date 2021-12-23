@@ -1,0 +1,27 @@
+.pagination{
+    margin-top: 48px;
+
+
+    &__list{
+        margin: 0 8px
+    }
+
+    &__item:not(:last-child){
+        margin-right: 8px;
+    }
+
+    &__item{
+        &:hover a,&.active a{
+            background: $blue1_main;
+            color: #fff
+        }
+    }
+
+    &__item a{
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+        border-radius: 4px;
+    }
+}

@@ -26,14 +26,6 @@
         // overflow-x: hidden;
     }
 
-    .input-group__input-element{
-        position: absolute;
-        right: 12px;
-        top: 50%;
-        transform: translateY(-50%);
-        line-height: 1.1em;
-    }
-
     .input-group__input{
         max-width: 302px;
 
@@ -96,6 +88,14 @@
     }
 }
 
+.input-group__input-element{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1.1em;
+}
+
 #cardNumber{
     padding-left: 12px;
 }
@@ -126,7 +126,7 @@
     transition: all .3s ease;
 
 
-    &:hover{
+    &:hover,&.default{
         border-color: $blue1_main;
         background: rgba(#D7F1FF80,0.5);
 
@@ -163,6 +163,7 @@
     position: relative;
     &__list{
         position: absolute;
+        right: 0;
         top: 0px;
         background: #fff;
         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
@@ -187,4 +188,60 @@
 .withdrawal__btn{
     margin-top: 32px;
     margin-bottom: 16px;
+}
+
+
+
+@media (max-width: 600px){
+    .tile__balance{
+        margin-top: 24px;
+    }
+    .tile__balance-caption{
+        font-size: 12px;
+    }
+    .tile__balance-amount{
+        font-size: 32px;
+    }
+    .tile__balance-amount span{
+        font-size: 20px;
+    }
+    .tile p{
+        font-size: 14px;
+    }
+    .tile__title_withdrawal{
+        margin-bottom: 0;
+    }
+    .withdrawal .withdrawal__inner{
+        margin: 0 -24px 0 -24px;
+        width: calc(100% + 48px);
+        padding: 8px 24px;
+    }
+    .withdrawal .withdrawal-hidden .withdrawal__inner:first-child{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .withdrawal .input-group{
+        width: 100%;
+        flex-wrap: wrap !important;
+    }
+    .withdrawal .input-group:not(:last-child){
+        margin-bottom: 16px;
+    }
+
+    .withdrawal .input-group__label span{
+        margin: 4px 0 8px 0;
+    }
+    .withdrawal .input-group__input-element{
+        top: 75%;
+    }
+
+    .withdrawal__btn{
+        margin-top: 24px;
+        margin-bottom: 0;
+    }
+
+    .context-menu__list{
+        right: 0;
+    }
+
 }

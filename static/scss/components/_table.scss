@@ -29,10 +29,18 @@
     &__row{
         // display: table-row;
         border-bottom: .5px solid $grey2_bg;
+
+        .cell__user-nickname span{
+            font-size: 12px;
+            display: block;
+            margin-top: 4px;
+            color: $txt2
+        }
+
         &:hover{
             background: $grey2_bg;
             .cell__user-nickname{
-                color: $blue1_main
+                color: $blue1_main;
             }
             .cell__expand-btn{
                 cursor: pointer;
