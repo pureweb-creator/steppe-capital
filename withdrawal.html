@@ -455,6 +455,8 @@
         methods: {
             addCard: function(){
 
+                
+                // reset all
                 this.addedCards.forEach(element => {
                     if(this.isDefault==true) element.ccDefault = false
                 });
@@ -470,22 +472,32 @@
                     ccDefault: this.isDefault
                 });
 
+                this.visible = false // hide modal
 
-                this.visible = false
-
-                // document.location.reload()
-
-                this.bankName = this.cardNumber = this.cardholderName = this.cardholderSurname = ""
+                this.bankName = this.cardNumber = this.cardholderName = this.cardholderSurname = "" // reset filled fields
             },
             deleteCard: function(index){
                 this.addedCards.splice(index,1)
             },
             setDefault: function(index){
+                // reset all 
                 this.addedCards.forEach(element => {
                     element.ccDefault = false
                 });
 
+                // except current
                 this.addedCards[index].ccDefault = true;
+            }
+        },
+        watch: {
+            visible: function(){
+                if(this.visible){
+                    document.documentElement.style.overflow = "hidden"
+                    document.documentElement.style.paddingRight = "19px"
+                    return
+                }
+                document.documentElement.style.overflow = "auto"
+                document.documentElement.style.paddingRight = "0"
             }
         }
     });
