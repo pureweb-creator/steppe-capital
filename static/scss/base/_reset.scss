@@ -76,9 +76,17 @@ input[type="number"] {
 	-webkit-appearance: textfield;
 	   -moz-appearance: textfield;
 			appearance: textfield;
+	
   }
   input[type=number]::-webkit-inner-spin-button, 
   input[type=number]::-webkit-outer-spin-button,
   select { 
 	-webkit-appearance: none;
   }
+
+  input {
+    -webkit-user-select: text; /* Chrome, Opera, Safari */
+    -moz-user-select: text; /* Firefox 2+ */
+    -ms-user-select: text; /* IE 10+ */
+    user-select: text; /* Standard syntax */
+}

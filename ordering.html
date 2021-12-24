@@ -264,7 +264,7 @@
                         <div class="input-group d-flex flex-nowrap align-items-start">
                             <label for="withdrawalAmount" class="input-group__label">
                                 Available
-                                <span>[[ fundsAvailable ]] USD(T)</span>
+                                <span>[[ fundsAvailable-funds ]] USD(T)</span>
                             </label>
                             
                             <input type="number" ref="balanceFundsInput" @keyup="validation" v-model="funds" :readonly="!isFundsChecked" placeholder="0" id="balanceFunds" name="balanceFunds" :max="fundsAvailable" class="input-group__input">
@@ -335,7 +335,7 @@
             return{
                 isFundsChecked: false,
                 fundsAvailable: 300,
-                funds: 0
+                funds: null
             }
         },
         methods: {
