@@ -135,7 +135,14 @@ h5{
 .mr-auto{
     margin-right: auto;
 }
+.color-blue{
+    color: $blue1_main
+}
 
+
+.color-dark{
+    color: $txt1_main !important
+}
 .flex-wrap{
     flex-wrap: wrap;
 }

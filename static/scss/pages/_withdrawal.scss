@@ -212,8 +212,8 @@
         margin-bottom: 0;
     }
     .withdrawal .withdrawal__inner{
-        margin: 0 -24px 0 -24px;
-        width: calc(100% + 48px);
+        margin: 0 0px 0 -15px;
+        width: calc(100% + 30px);
         padding: 8px 24px;
     }
     .withdrawal .withdrawal-hidden .withdrawal__inner:first-child{
@@ -230,6 +230,9 @@
 
     .withdrawal .input-group__label span{
         margin: 4px 0 8px 0;
+    }
+    .withdrawal .input-group__input{
+        max-width: 100%;
     }
     .withdrawal .input-group__input-element{
         top: 75%;

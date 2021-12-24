@@ -1,0 +1,142 @@
+.payment{
+    margin-top: 32px;
+
+    .custom-checkbox__label{
+        font-size: 16px;
+        color: $txt1_main;
+        opacity: 1;
+    }
+
+    .input-group__input{
+        max-width: 302px;
+        margin-left: auto;
+    }
+
+    .input-group__label{
+        margin-bottom: 0;
+        margin-left: 32px;
+        font-size: 14px;
+        margin-right: 24px;
+        display: block;
+        color: $txt2;
+        span{
+            display: block;
+            font-size: 12px;
+            margin-top: 8px;
+            color: $blue1_main;
+        }
+    }
+}
+
+.tile_payment{
+    padding-right: 227px;
+}
+.tile_order{
+
+}
+
+.divider{
+    margin: 0 -32px;
+    line-height: 0;
+
+    position: relative;
+
+    svg{
+        max-width: 100%;
+    }
+
+
+    &::after,&::before{
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: $grey3_bg;
+        border-radius: 50px;
+        position: absolute;
+
+        top: -4px
+    }
+
+    &::after{
+        left: -8px
+    }
+    &::before{
+        right: -8px
+    }
+}
+
+.order{
+    border-bottom: 2px solid $grey2_bg;
+    &__funds{
+        margin-bottom: 16px;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    &__item,&__item *{
+        font-size: 12px !important;
+    }
+
+    &__item-name{
+        margin-bottom: 0 !important;
+        span{
+            color: $txt2
+        }
+    }
+
+    &__total{
+        color: $blue1_main;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: .1em;
+        font-weight: 500;
+        span{
+            font-size: inherit;
+        }
+    }
+    &__pay-btn{
+        margin-top: 32px;
+    }
+}
+
+div .order:last-child{
+    border-bottom: unset;
+}
+
+@media screen and (max-width: 600px){
+    .payment{
+        .input-group{
+            flex-wrap: wrap !important;
+        }
+        .input-group__input{
+            max-width: 100%;
+            margin-left: 32px;
+            margin-top: 8px;
+        }
+        .input-group__input-element{
+            top: unset;
+            bottom: 5px
+        }
+    }
+    .divider{
+        margin: 0 -15px;
+        svg{
+            width: 100%;
+        }
+    }
+    .order{
+        padding-top: 12px !important;
+        padding-bottom: 8px !important;
+    }
+    .order__pay-btn{
+        margin-top: 24px;
+    }
+
+    .order__funds{
+        margin-bottom: 12px;
+    }
+}
