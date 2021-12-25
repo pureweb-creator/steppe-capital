@@ -251,23 +251,14 @@
                     <p class="tile_small">Please specify the amount you wish to withdraw from your balance.</p>
                     <p class="tile_small">The remainder will be deducted from your bank card.</p>
 
-                    <div class="payment">
-                        <div class="input-group d-flex justify-content-between align-items-center" style="width: 100%">
-                            <label for="useBalanceFunds" class="custom-checkbox d-flex">
-                                <input v-model="isFundsChecked" @click="balanceFundsInputFocus" class="custom-checkbox__input" type="checkbox" id="useBalanceFunds" name="useBalanceFunds">
-                                <span class="custom-checkbox__icon">
-                                    <span class="custom-checkbox__fill"></span>
-                                </span>
-                                <div class="custom-checkbox__label">Use the funds on your balance</div>
-                            </label>
-                        </div>
+                    <div class="payment d-flex">
                         <div class="input-group d-flex flex-nowrap align-items-start">
                             <label for="withdrawalAmount" class="input-group__label">
                                 Available
                                 <span>[[ fundsAvailable-funds ]] USD(T)</span>
                             </label>
                             
-                            <input type="number" ref="balanceFundsInput" @keyup="validation" v-model="funds" :readonly="!isFundsChecked" placeholder="0" id="balanceFunds" name="balanceFunds" :max="fundsAvailable" class="input-group__input">
+                            <input type="number" ref="balanceFundsInput" @keyup="validation" v-model="funds" placeholder="0" id="balanceFunds" name="balanceFunds" :max="fundsAvailable" class="input-group__input">
                             <span class="input-group__input-element">USD(T)</span>
                         </div>
                     </div>
@@ -299,7 +290,7 @@
                             </div>
                         </div>
                         <div class="withdrawal__inner order">
-                            <div class="d-flex justify-content-between order__item order__funds" v-if="isFundsChecked">
+                            <div class="d-flex justify-content-between order__item order__funds" v-if="funds!=null">
                                 <p class="order__item-name"><span class=" color-dark">Use  from balance</span></p>
                                 <p class="color-blue">-[[ funds ]] USD(T)</p>
                             </div>
@@ -333,7 +324,6 @@
         delimiters: ["[[", "]]"],
         data() {
             return{
-                isFundsChecked: false,
                 fundsAvailable: 300,
                 funds: null
             }
