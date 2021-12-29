@@ -74,6 +74,7 @@ $(document).ready(function(){
 
     $('.overlay').on('click', function(event){
         event.stopPropagation();
+
         $(this).removeClass('active');
         $('.mobile-menu,.mini-cart').removeClass('active');
         $('html').css({
@@ -81,9 +82,12 @@ $(document).ready(function(){
             "padding-right": "0"
         });
         $('body').css('overflow','unset');
-    }).children().click(function(e){
-        return false;
     });
+
+    $('.overlay').children().click(function(e){
+        e.stopPropagation();
+    });
+
 
     $('#copyLinkBtn').on('click',function(){
         var element = "#referalLink";
@@ -102,44 +106,13 @@ $(document).ready(function(){
         'align-items': 'center'
     });   
 
-    // $('.table__line:not(.table__line_non_active)').on('click', function(event){
-    //     event.stopPropagation;
-    //     $(this).parent().find('.expand').first().toggle('slow');
-    //     $(this).find('.cell__expand-btn').first().toggleClass('active');
-    // });
-
-    
-
-    // $('tbody tr[data-node-id]').each(function(index,item){
-    //     if(!(index&1)){
-    //         // item.style.backgroundColor = "#F8F8F8";
-    //     }
-    //     $.each(this.attributes, function(i,a){
-    //         if(a.name=='data-node-id'){
-    //             if(!(parseInt(a.value.toString().split('.').join('')) & 1)){
-
-    //                 item.style.backgroundColor = "#F8F8F8";
-                    
-                    
-
-    //             }
-    //         }
-            
-    //     })
-
-
-        
-    // });
-
     $('#tree').simpleTreeTable({
         iconPosition:':second',
         iconTemplate:'<div />'
     });
 
     $('.grid').masonry({
-        // set itemSelector so .grid-sizer is not used in layout
         itemSelector: '.grid-item',
-        // use element for option
         columnWidth: '.grid-sizer',
         percentPosition: true,
         gutter: 30
@@ -157,7 +130,6 @@ $(document).ready(function(){
           if ($button.text() == "+") {
               var newVal = parseFloat(oldValue) + 1;
             } else {
-             // Don't allow decrementing below zero
             if (oldValue > 0) {
               var newVal = parseFloat(oldValue) - 1;
               } else {

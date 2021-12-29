@@ -1,11 +1,13 @@
 var
-    gulp         = require("gulp"),
-    rename       = require("gulp-rename"),
-    sourcemaps   = require("gulp-sourcemaps"),
-    uglify       = require("gulp-uglify"),
-    browserSync  = require("browser-sync").create(),
-    webp         = require('gulp-webp'),
-    sass         = require("gulp-sass");
+    gulp            = require("gulp"),
+    rename          = require("gulp-rename"),
+    sourcemaps      = require("gulp-sourcemaps"),
+    uglify          = require("gulp-uglifyes"),
+    plumberNotifier = require("gulp-plumber-notifier"),
+    browserSync     = require("browser-sync").create(),
+    webp            = require("gulp-webp"),
+    wait            = require("gulp-wait"),
+    sass            = require("gulp-sass");
 
 function livereload(done){
     browserSync.init({
@@ -25,6 +27,7 @@ function browserReload(done){
 
 function build(done){
     gulp.src("./static/scss/**/*.scss")
+        .pipe(wait(200))
         .pipe(sourcemaps.init())
         .pipe(sass({
             errorLogToConsole: true,
@@ -40,14 +43,19 @@ function build(done){
 
 function jsBuild(done){
 	gulp.src('./static/js/**/main.js')
+        .pipe(plumberNotifier())
 		.pipe(sourcemaps.init())
-		.pipe(uglify())
+		.pipe(uglify({
+            mangle: false,
+            ecma: 6
+        }))
 		.pipe(rename({suffix: ".min"}))
 		.pipe(sourcemaps.write("./"))
-		.pipe(gulp.dest("./js/"))
+		.pipe(gulp.dest("./static/js/"))
 		.pipe(browserSync.stream());
 	done();
 }
+
 
 function imgToWebp(done){
     gulp.src(['./static/img/*.jpg','./static/img/*.png','./static/img/*.tiff'])
@@ -61,7 +69,7 @@ function watch(){
     gulp.watch("./*.html", browserReload);
     gulp.watch("./static/js/**/main.js", jsBuild);
     gulp.watch("php/**/*.php", browserReload);
-    gulp.watch(['./static/img/*.jpg','./static/img/*.png','./static/img/*.tiff'],imgToWebp);
+    gulp.watch(['./static/img/*.jpg','./static/img/*.png','./static/img/*.tiff'], imgToWebp);
 }
 
 gulp.task("default", gulp.parallel(watch, livereload));

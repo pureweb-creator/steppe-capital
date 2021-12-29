@@ -252,6 +252,9 @@
                     <p class="tile_small">The remainder will be deducted from your bank card.</p>
 
                     <div class="payment d-flex">
+                        <div class="input-group" style="font-size: 16px;">
+                            Use the funds on your balance
+                        </div>
                         <div class="input-group d-flex flex-nowrap align-items-start">
                             <label for="withdrawalAmount" class="input-group__label">
                                 Available
@@ -301,7 +304,6 @@
                         </div>
                     </div>
                     <a href="#" class="btn btn_style1 order__pay-btn w-100 text-center">Pay</a>
-
                 </div>
             </div>
         </div>
@@ -329,9 +331,6 @@
             }
         },
         methods: {
-            balanceFundsInputFocus: function(){
-                this.$refs.balanceFundsInput.focus()
-            },
             validation: function(){
                 if (this.funds > this.fundsAvailable)
                     this.funds = null
