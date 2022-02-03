@@ -78,6 +78,10 @@
   &__item.active a,&__item:hover a{
     color: $blue1_main;
   }
+  &__item.inactive a{
+    color: $txt2;
+    cursor: not-allowed;
+  }
   &__item span{
     margin-right: 4px;
     display: inline-block;

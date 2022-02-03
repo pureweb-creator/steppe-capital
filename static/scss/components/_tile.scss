@@ -63,6 +63,12 @@
     padding: 12px;
 }
 
+.tile__img{
+    flex-shrink: 0;
+    max-width: 168px;
+    width: 100%;
+}
+
 p.tile_small{
     font-size: 14px;
 }

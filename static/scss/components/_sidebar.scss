@@ -4,6 +4,9 @@
   border-radius: 4px;
   background: #fff;
   padding: 32px;
+
+  position: sticky;
+  top: 100px
 }
 
 .upload-avatar-form{
@@ -43,4 +46,8 @@
   width: 165px;
   height: 165px;
   object-fit: cover;
+}
+
+.sidebar__title{
+  margin-bottom: 16px;
 }
