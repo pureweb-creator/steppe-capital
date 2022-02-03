@@ -99,3 +99,19 @@
 .header__search-form{
   margin-left: 48px;
 }
+
+@media (max-width: 992px){
+  .header__search-form{
+    margin-left: 0;
+  }
+  .header__search-form .input-group{
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px){
+  .header__search-form .input-group{
+    margin-top: 0px;
+  }
+}

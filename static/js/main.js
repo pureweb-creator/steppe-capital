@@ -117,31 +117,6 @@ $(document).ready(function(){
         percentPosition: true,
         gutter: 30
       });
-      $(function() {
-
-        $(".quantity").append('<div class="inc button">+</div>');
-        $(".quantity").prepend('<div class="dec button">-</div>');
-      
-        $(".button").on("click", function() {
-      
-          var $button = $(this);
-          var oldValue = $button.parent().find("input").val();
-      
-          if ($button.text() == "+") {
-              var newVal = parseFloat(oldValue) + 1;
-            } else {
-            if (oldValue > 0) {
-              var newVal = parseFloat(oldValue) - 1;
-              } else {
-              newVal = 0;
-            }
-            }
-      
-          $button.parent().find("input").val(newVal);
-      
-        });
-      
-      });
 
 
       $("#datepickerFrom").datepicker({
