@@ -109,3 +109,18 @@
     .grid-item { width: 100%; margin-bottom: 30px; }
 }
 
+.card_disabled{
+    cursor: not-allowed;
+
+    p,picture{
+        opacity: .4 !important;
+        color: $txt2;
+    }
+
+    .btn, .btn:hover{
+        background: $grey2_bg !important;
+        border-color: $grey2_bg !important;
+        cursor: not-allowed;
+        color: $txt2
+    }
+}

@@ -64,45 +64,6 @@
         }
     }
 
-    .cell{
-
-        &__number{
-            border: 1px solid $grey1_stroke;
-            border-radius: 4px;
-            width: 24px;
-            height: 24px;
-            text-align: center;
-            line-height: 24px;
-            margin-right: 8px;
-        }
-        &__user-avatar{
-            width: 32px;
-            height: 32px;
-            margin-right: 16px;
-            border-radius: 4px;
-        }
-        &__user-nickname{
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 1em;
-            margin-right: 10px;
-        }
-        &__info-btn{
-            margin-right: 13px;
-            cursor: pointer;
-        }
-        &__expand-btn{
-            width: auto;
-            height: auto;
-            padding: 10px;
-            line-height: initial;
-            transition: all .3s ease;
-            &.active{
-                transform: rotate(180deg);
-            }
-        }
-    }
-
     .table__line_non_active{
         .cell__info-btn{
             
@@ -123,6 +84,45 @@
 
     .empty .cell__expand-btn{
         display: none;
+    }
+}
+
+.cell{
+
+    &__number{
+        border: 1px solid $grey1_stroke;
+        border-radius: 4px;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+        margin-right: 8px;
+    }
+    &__user-avatar{
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+        border-radius: 4px;
+    }
+    &__user-nickname{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1em;
+        margin-right: 10px;
+    }
+    &__info-btn{
+        margin-right: 13px;
+        cursor: pointer;
+    }
+    &__expand-btn{
+        width: auto;
+        height: auto;
+        padding: 10px;
+        line-height: initial;
+        transition: all .3s ease;
+        &.active{
+            transform: rotate(180deg);
+        }
     }
 }
 

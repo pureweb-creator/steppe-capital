@@ -1,7 +1,12 @@
-@import "base/reset";
 @import "base/variables";
+
+@import "base/reset";
 @import "base/base";
 @import "base/fonts";
+
+@import "vendors/remodal";
+@import "vendors/slick";
+@import "vendors/slick-theme";
 
 @import "components/header";
 @import "components/footer";
@@ -22,6 +27,7 @@
 @import "components/pagination";
 @import "components/tag";
 
+@import "pages/statistics";
 @import "pages/welcome";
 @import "pages/sign-up";
 @import "pages/page-main";
@@ -36,7 +42,6 @@
 @import "pages/ordering";
 @import "pages/news";
 
-@import "vendors/remodal";
 
 @import "base/responsive";
 

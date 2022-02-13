@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  	<meta name="robots" content="index,follow,noodp">
+  	<meta name="googlebot" content="index,follow">
+  	<!-- <meta property="og:locale" content="ru_RU"> -->
+      
+    <!-- fonts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" href="static/css/bootstrap-grid.min.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all" href="static/css/main.min.css">
+    <noscript><link rel="stylesheet" href="static/css/bootstrap-grid.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="static/css/main.min.css"></noscript>
+
+    <title>Statistic</title>
+</head>
+<body>
+
+<!-- Mobile menu -->
+<div class="overlay">
+    <div class="mobile-menu">
+        <div class="mobile-menu__top">
+            <div class="mobile-menu__profile-info d-flex flex-nowrap">
+                <img src="static/img/user-avatar.jpg" class="profile-mini__avatar" alt="">
+                <div>
+                    <span class="mobile-menu__profile-name">beauty777</span>
+                    <a href="mailto:beauty777@mail.com" class="mobile-menu__profile-email">beauty777@mail.com</a>
+                </div>
+            </div>
+        </div>
+        <nav class="mobile-menu__nav main-nav">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item main-nav__item"><a href="#">Profile</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Settings</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Log out</a></li>
+            </ul>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item main-nav__item"><a href="#">Main</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Shop</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Education</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Signals <span>new</span></a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Structure</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">Statistics</a></li>
+                <li class="mobile-menu__item main-nav__item"><a href="#">News</a></li>
+            </ul>
+            <div class="mobile-menu__list">
+                <h4 class="mobile-menu__title">language</h4>
+                <select class="mobile-menu__language">
+                    <option class="" value="en">Eng</option>
+                    <option class="" value="en">Ru</option>
+                    <option class="" value="en">Ua</option>
+                </select>
+            </div>
+            <ul class="mobile-menu__list mobile-menu__list_last">
+                <h4 class="mobile-menu__title">Contact Us</h4>
+                <li class="mobile-menu__item"><a href="mailto:mail@steppe.capital">mail@steppe.capital</a></li>
+                <li class="mobile-menu__item"><a href="tel:+71234567890">+7 123 456 78 90</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Mini cart -->
+<div class="overlay">
+    <div class="mini-cart">
+        <a href="#!" class="mini-cart__close" id="closeMiniCart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#909090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#909090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <h3 class="mini-cart__title">YOUR CART</h3>
+        
+        <div>
+            <div class="mini-cart__item">
+                <img src="static/img/shop-img1.jpg" alt="" class="mini-cart__thumbnail">
+                <div class="mini-cart__body">
+                    <h4 class="mini-cart__item-title">From zero to trader</h4>
+                    <p class="mini-cart__item-desc">
+                        Training course that teaches you how to trade and make money in the cryptocurrency markets.
+                    </p>
+    
+                    <footer class="mini-cart__item-footer">
+                        <div class="card__price">
+                            <span>500</span> USD(T)
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity">
+                                <input type="text" name="french-hens" id="french-hens2" value="3">
+                            </div>
+                            <div class="remove">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6H5H21" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 11V17" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14 11V17" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="mini-cart__item">
+                <img src="static/img/shop-img2.jpg" alt="" class="mini-cart__thumbnail">
+                <div class="mini-cart__body">
+                    <h4 class="mini-cart__item-title">Trading signals (1 month)</h4>
+                    <p class="mini-cart__item-desc">
+                        1 month subscription to receive signals.
+                    </p>
+    
+                    <footer class="mini-cart__item-footer">
+                        <div class="card__price">
+                            <span>300</span> USD(T)
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity">
+                                <input type="text" name="french-hens" id="french-hens2" value="3">
+                            </div>
+                            <div class="remove">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6H5H21" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 11V17" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14 11V17" stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini-cart__subtotal d-flex align-items-center justify-content-between">
+            <span class="mini-cart__subtotal-title">Subtotal:</span>
+            <div class="card__price">
+                <span>800</span> USD(T)
+            </div>
+        </div>
+
+        <a href="#" class="btn btn_style1 mini-cart__checkout-btn">Checkout</a>
+        <a href="#" class="btn card__learn-more">View cart</a>
+    </div>
+</div>
+
+<header class="header">
+    <div class="container">
+        <div class="header_top"> 
+            <div class="row align-items-center">
+                <div class="col-3 burger mr-auto">
+                    <a href="#" id="burger">
+                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="black"/>
+                        </svg>                                
+                    </a>
+                </div>
+                <div class="col-lg-2 col-4 text-center">
+                    <a href="/" class="logo"><img src="static/img/LOGO%20Steppe.svg" alt="home logo"></a>
+                </div>
+                <div class="col-lg-5 col-md-6 col-3 d-flex align-items-center ml-auto">
+                    <div class="header__lang dropdown">
+                        <a href="#" class="dropdown__current d-flex align-items-center justify-content-end">
+                            Eng
+                            <svg class="dropdown__icon" width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0L5 5L10 0H0Z" fill="#151515"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__item"><a href="#">Language_1</a></li>
+                            <li class="dropdown__item"><a href="#">Language_2</a></li>
+                            <li class="dropdown__item"><a href="#">Language_3</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="cart header__cart d-flex flex-nowrap" id="cartOpen">
+                        <img src="static/img/icon-basket.svg" alt="">
+                        <span class="cart__count header__cart-count">2</span>
+                    </div>
+
+                    <div class="profile-mini dropdown d-flex align-items-center">
+                        <span class="profile-mini__name">beauty777</span>
+                        <img src="static/img/user-avatar.webp" alt="Avatar" class="profile-mini__avatar lazy">
+                        <img src="static/img/arrow-down.png" alt="arrow" class="profile-mini__arrow">
+
+                        <div class="">
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item"><a href="index.html">Profile</a></li>
+                                <li class="dropdown__item"><a href="settings.html">Settings</a></li>
+                                <li class="dropdown__item"><a href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <nav class="main-nav">
+                        <ul class="main-nav__menu d-flex align-items-center">
+                            <li class="main-nav__item"><a href="#">Main</a></li>
+                            <li class="main-nav__item"><a href="#">Shop</a></li>
+                            <li class="main-nav__item"><a href="#">Education</a></li>
+                            <li class="main-nav__item"><a href="#">Signals <span>new</span></a></li>
+                            <li class="main-nav__item active"><a href="#">Structure</a></li>
+                            <li class="main-nav__item"><a href="#">Statistics</a></li>
+                            <li class="main-nav__item"><a href="#">News</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-4  ml-auto">
+                    <form action="" method="GET" class="search-form header__search-form">
+                        <div class="input-group d-flex align-items-center flex-nowrap">
+                            <input type="text" class="input-group__input search-form__input" placeholder="Search">
+                            <button class="search-form__btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#151515" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#151515" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                    </svg>                                                                     
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="page page_profile page-statistics">
+    <div class="container">
+
+        <div class="row">
+        <div class="col-12">
+            <div class="page_str__offer">
+                <h1 class="offer__title h3">Statistic</h1>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="tile with-tile">
+               <h4 class="d-flex align-items-center tile__title">Your income <img style="margin-left: 9px" src="static/img/question.svg" alt=""></h4>
+               <div class="tile-wrapper tile-income">
+                   <div class="tile__item">
+                       <span class="tile__item-title">+today</span>
+                       <span class="tile__number">0 <span>USD(T)</span></span>
+                   </div>
+                   <div class="tile__item tile__item_blue2">
+                       <span class="tile__item-title">+January</span>
+                       <span class="tile__number">1550 <span>USD(T)</span></span>
+                   </div>
+                   <div class="tile__item tile__item_yellow">
+                       <span class="tile__item-title">all time</span>
+                       <span class="tile__number">2 543 643 <span>USD(T)</span> </span>
+                   </div>
+               </div>
+           </div>
+        </div>
+
+        <div class="col-12">
+            <div class="tile tile_theme_sky tile_no-bg with-tile">
+               <h4 class="d-flex align-items-center tile__title">Your bonuses for all time
+                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 9px;"><path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM11 17H9V15H11V17ZM13.07 9.25L12.17 10.17C11.45 10.9 11 11.5 11 13H9V12.5C9 11.4 9.45 10.4 10.17 9.67L11.41 8.41C11.78 8.05 12 7.55 12 7C12 5.9 11.1 5 10 5C8.9 5 8 5.9 8 7H6C6 4.79 7.79 3 10 3C12.21 3 14 4.79 14 7C14 7.88 13.64 8.68 13.07 9.25Z" fill="white"></path></svg>
+                </h4>
+                <div class="tile-wrapper tile-bonus">
+                    <div class="tile__item">
+                       <span class="tile__item-title">FAST START</span>
+                       <span class="tile__number">0 <span>USD(T)</span></span>
+                    </div>
+                    <div class="tile__item">
+                       <span class="tile__item-title">REFERAL BONUS</span>
+                       <span class="tile__number">3 550 <span>USD(T)</span></span>
+                    </div>
+                    <div class="tile__item">
+                       <span class="tile__item-title">BONUS POOL</span>
+                       <span class="tile__number">2 954 754 <span>USD(T)</span> </span>
+                    </div>
+                    <div class="tile__item">
+                       <span class="tile__item-title">COMULATIVE BONUS</span>
+                       <span class="tile__number">1 543 234 <span>USD(T)</span> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="tile with-tile tile-fast-start">
+               <h4 class="d-flex align-items-center tile__title">Fast start <img style="margin-left: 9px" src="static/img/question.svg" alt=""></h4>
+
+               <div class="row">
+                   <div class="col-lg-3">
+                        <span class="little-title">days left</span>
+                        <span class="big-number tile-fast-start__days-left">30</span>
+                        <span class="little-title">current bonus</span>
+                        <div class="current-bonus">
+                            <span class="done">Apple IPhone 13 PRO</span>
+                            <picture class="current-bonus__image">
+                                <source srcset="static/img/iphone-bonus.webp" type="image/webp">
+                                <source srcset="static/img/iphone-bonus.jpg" type="image/jpeg">
+                                <img src="static/img/iphone-bonus.jpg" height="86" width="129" alt="Apple IPhone 13 PRO">
+                            </picture>
+                            <span class="little-desc">
+                                A company representative will contact you shortly for a gift.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="go-to-next-bonus">
+                            <span class="little-title">TO GO TO THE NEXT BONUS</span>
+                            <p>
+                                <span class="bold-title tile__item-subtitle">Personally invited</span>
+                                
+                                <!-- Добавить к steps класс done если все выполнено (т.е. 3/3) -->
+                                <span class="steps">
+                                    <span class="steps__current">1 </span>/
+                                    <span class="steps__all">3</span>
+                                </span>
+                            </p>
+                            <div class="d-flex invited-peoples">
+                                <div class="invited-peoples__item">
+                                    <picture>
+                                        <source srcset="static/img/personally-invited1.webp" type="image/webp">
+                                        <source srcset="static/img/personally-invited1.jpg" type="image/jpeg">
+                                        <img src="static/img/personally-invited1.jpg" height="48" width="48" alt="Nickname - personally invited" loading="lazy">
+                                    </picture>
+                                </div>
+                                <!-- Если пустой, добавить класс no-avatar -->
+                                <div class="invited-peoples__item no-avatar"></div>
+                                <div class="invited-peoples__item no-avatar"></div>
+                            </div>
+                            <div id="fastStartApp">
+                                <span class="bold-title tile__item-subtitle">Volume</span>
+
+                                <!-- Добавить к steps класс done если все выполнено (т.е. 3/3) -->
+                                <div class="steps" :class="{'done': maxValue === sumValue}">
+                                    <span class="steps__current">[[ sumValue ]] USD(T) </span>/
+                                    <span class="steps__all">[[ maxValue ]] USD(T)</span>
+                                </div>
+
+                                <div class="range">
+                                    <div class="range__strong-branch" :style="{'width': sbPercentValue}">
+                                        <div class="invited-user d-flex flex-nowrap align-items-center cell">
+                                            <span class="cell__number">1</span>
+                                            <img class="cell__user-avatar" src="static/img/personally-invited1.jpg" alt="user avatar" width="48" height="48" loading="lazy">
+                                            <span class="cell__user-nickname">@Naz_Tokio</span>
+                                            <a href="#modal">
+                                                <svg class="cell__info-btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0Z" fill="#D6D6D6"/>
+                                                    <path d="M9 15H11V9H9V15Z" fill="#fff"/>
+                                                     <path d="M9 7H11V5H9V7Z" fill="#fff"/>
+                                                </svg>
+                                            </a>    
+                                        </div>
+                                    </div>
+                                    <div class="range__additional-volume" :style="{'width': avPercentValue}"></div>
+                                </div>
+
+                                <div class="legend d-flex flex-nowrap">
+                                    <div class="legend__item">
+                                        <div class="legend__title">Strong branch</div>
+                                        <span>[[ sbValue ]] USD(T)</span>   
+                                    </div>
+                                    <div class="legend__item">
+                                        <div class="legend__title">Additional volume</div>
+                                        <span>[[ avValue ]] USD(T)</span>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <span class="little-title ">next bonus</span>
+                        <p>Apple Airpods 3</p>
+                        <picture>
+                            <source srcset="static/img/airpods.webp" type="image/webp">
+                            <source srcset="static/img/airpods.jpg" type="image/jpeg">
+                            <img src="static/img/airpods.jpg" height="120" width="180" alt="Next bonus - Apple Airpods 3" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>        
+        </div>
+
+        <div class="col-12">
+            <div class="tile with-tile tile-referal">
+                <h4 class="d-flex align-items-center tile__title">Referal bonus <img style="margin-left: 9px" src="static/img/question.svg" alt=""></h4>
+
+                <div class="no-referals">
+                    <span class="little-title">You have no invitees yet</span>
+                    <p class="date no-referals__text">When you have invitees you’ll see them here</p>
+                </div>
+
+                <div class="d-flex date">
+                   <span>02.10.2022</span>
+                </div>
+
+                <div class="referals-slider d-flex">
+                    <div class="referals-slider__slide">
+                        <picture class="current-bonus__image">
+                            <source srcset="static/img/slide1.webp" type="image/webp">
+                            <source srcset="static/img/slide1.jpg" type="image/jpeg">
+                            <img src="static/img/slide1.jpg" height="120" width="120" alt="tdwp666">
+                        </picture>
+                        <span class="cell__user-nickname">tdwp666</span>
+                        <span class="referals-slider__level date">Lvl 1</span>
+                        <span class="done">+30 USD(T)</span>
+                    </div>
+
+                    <div class="referals-slider__slide">
+                        <picture class="current-bonus__image">
+                            <source srcset="static/img/slide2.webp" type="image/webp">
+                            <source srcset="static/img/slide2.jpg" type="image/jpeg">
+                            <img src="static/img/slide2.jpg" height="120" width="120" alt="AntonIshutin">
+                        </picture>
+                        <span class="cell__user-nickname">AntonIshutin</span>
+                        <span class="referals-slider__level date">Lvl 3</span>
+                        <span class="done">+12 USD(T)</span>
+                    </div>
+
+                    <div class="referals-slider__slide">
+                        <picture class="current-bonus__image">
+                            <source srcset="static/img/slide3.webp" type="image/webp">
+                            <source srcset="static/img/slide3.jpg" type="image/jpeg">
+                            <img src="static/img/slide3.jpg" height="120" width="120" alt="AntonIshutin">
+                        </picture>
+                        <span class="cell__user-nickname">Luttrell</span>
+                        <span class="referals-slider__level date">Lvl 3</span>
+                        <span class="done">+12 USD(T)</span>
+                    </div>
+
+                    <div class="referals-slider__slide">
+                        <picture class="current-bonus__image">
+                            <source srcset="static/img/slide4.webp" type="image/webp">
+                            <source srcset="static/img/slide4.jpg" type="image/jpeg">
+                            <img src="static/img/slide4.jpg" height="120" width="120" alt="AntonIshutin">
+                        </picture>
+                        <span class="cell__user-nickname">Trevor Someth...</span>
+                        <span class="referals-slider__level date">Lvl 3</span>
+                        <span class="done">+12 USD(T)</span>
+                    </div>
+
+                    <div class="referals-slider__slide">
+                        <picture class="current-bonus__image">
+                            <source srcset="static/img/slide5.webp" type="image/webp">
+                            <source srcset="static/img/slide5.jpg" type="image/jpeg">
+                            <img src="static/img/slide5.jpg" height="120" width="120" alt="AntonIshutin">
+                        </picture>
+                        <span class="cell__user-nickname">Nikki Flores</span>
+                        <span class="referals-slider__level date">Lvl 3</span>
+                        <span class="done">+12 USD(T)</span>
+                    </div>
+
+                    <div class="referals-slider__slide">
+                        <picture class="current-bonus__image">
+                            <source srcset="static/img/slide7.webp" type="image/webp">
+                            <source srcset="static/img/slide7.jpg" type="image/jpeg">
+                            <img src="static/img/slide7.jpg" height="120" width="120" alt="Naz_Tokio">
+                        </picture>
+                        <span class="cell__user-nickname">Naz_Tokio</span>
+                        <span class="referals-slider__level date">Lvl 3</span>
+                        <span class="done">+12 USD(T)</span>
+                    </div>
+
+                    <div class="referals-slider__slide">
+                        <picture class="current-bonus__image">
+                            <source srcset="static/img/slide8.webp" type="image/webp">
+                            <source srcset="static/img/slide8.jpg" type="image/jpeg">
+                            <img src="static/img/slide8.jpg" height="120" width="120" alt="The_Expendab...">
+                        </picture>
+                        <span class="cell__user-nickname">The_Expendab...</span>
+                        <span class="referals-slider__level date">Lvl 3</span>
+                        <span class="done">+12 USD(T)</span>
+                    </div>
+
+                    <div class="referals-slider__slide">
+                        <picture class="current-bonus__image">
+                            <source srcset="static/img/slide9.webp" type="image/webp">
+                            <source srcset="static/img/slide9.jpg" type="image/jpeg">
+                            <img src="static/img/slide9.jpg" height="120" width="120" alt="ivanova_e_v">
+                        </picture>
+                        <span class="cell__user-nickname">ivanova_e_v</span>
+                        <span class="referals-slider__level date">Lvl 3</span>
+                        <span class="done">+12 USD(T)</span>
+                    </div>
+
+                    <div class="referals-slider__slide">
+                        <picture class="current-bonus__image">
+                            <source srcset="static/img/slide6.webp" type="image/webp">
+                            <source srcset="static/img/slide6.jpg" type="image/jpeg">
+                            <img src="static/img/slide6.jpg" height="120" width="120" alt="ivanova_e_v">
+                        </picture>
+                        <span class="cell__user-nickname">Steve_Aoki</span>
+                        <span class="referals-slider__level date">Lvl 3</span>
+                        <span class="done">+12 USD(T)</span>
+                    </div>
+
+                    <div class="referals-slider__slide">
+                        <picture class="current-bonus__image">
+                            <source srcset="static/img/slide10.webp" type="image/webp">
+                            <source srcset="static/img/slide10.jpg" type="image/jpeg">
+                            <img src="static/img/slide10.jpg" height="120" width="120" alt="Joel Coopa">
+                        </picture>
+                        <span class="cell__user-nickname">Joel Coopa</span>
+                        <span class="referals-slider__level date">Lvl 3</span>
+                        <span class="done">+12 USD(T)</span>
+                    </div>
+
+                    <div class="referals-slider__slide">
+                        <picture class="current-bonus__image">
+                            <source srcset="static/img/slide11.webp" type="image/webp">
+                            <source srcset="static/img/slide11.jpg" type="image/jpeg">
+                            <img src="static/img/slide11.jpg" height="120" width="120" alt="Joel Coopa">
+                        </picture>
+                        <span class="cell__user-nickname">ivanna_ivanov...</span>
+                        <span class="referals-slider__level date">Lvl 3</span>
+                        <span class="done">+12 USD(T)</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-12">
+            <div class="tile with-tile tile-referal">
+                <h4 class="d-flex align-items-center tile__title">Bonus pool <img style="margin-left: 9px" src="static/img/question.svg" alt=""></h4>
+                <a href="#" class="text-blue text-underline">Bonus history</a>
+
+                <div class="row">
+                    <div class="col-lg-3">
+                        <span class="little-title">CURRENT RANK</span>
+                        <span class="big-number tile-fast-start__days-left current-rank">0</span>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="go-to-next-bonus">
+                            <span class="little-title">TO GO TO THE NEXT rank</span>
+                            <p>
+                                <span class="bold-title tile__item-subtitle">Personally invited</span>
+                                
+                                <!-- Добавить к steps класс done если все выполнено (т.е. 3/3) -->
+                                <span class="steps">
+                                    <span class="steps__current">1 </span>/
+                                    <span class="steps__all">3</span>
+                                </span>
+                            </p>
+                            <div class="d-flex invited-peoples">
+                                <div class="invited-peoples__item">
+                                    <picture>
+                                        <source srcset="static/img/personally-invited1.webp" type="image/webp">
+                                        <source srcset="static/img/personally-invited1.jpg" type="image/jpeg">
+                                        <img src="static/img/personally-invited1.jpg" height="48" width="48" alt="Nickname - personally invited" loading="lazy">
+                                    </picture>
+                                </div>
+                                <!-- Если пустой, добавить класс no-avatar -->
+                                <div class="invited-peoples__item no-avatar"></div>
+                                <div class="invited-peoples__item no-avatar"></div>
+                            </div>
+                            <div id="currentRankApp">
+                                <span class="bold-title tile__item-subtitle">Volume</span>
+
+                                <!-- Добавить к steps класс done если все выполнено (т.е. 3/3) -->
+                                <div class="steps" :class="{'done': maxValue === sumValue}">
+                                    <span class="steps__current">[[ sumValue ]] USD(T) </span>/
+                                    <span class="steps__all">[[ maxValue ]] USD(T)</span>
+                                </div>
+
+                                <div class="range">
+                                    <div class="range__strong-branch" :style="{'width': sbPercentValue}">
+                                        <div class="invited-user d-flex flex-nowrap align-items-center cell">
+                                            <span class="cell__number">1</span>
+                                            <img class="cell__user-avatar" src="static/img/personally-invited1.jpg" alt="user avatar" width="48" height="48" loading="lazy">
+                                            <span class="cell__user-nickname">@Naz_Tokio</span>
+                                            <a href="#modal">
+                                                <svg class="cell__info-btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0Z" fill="#D6D6D6"/>
+                                                    <path d="M9 15H11V9H9V15Z" fill="#fff"/>
+                                                     <path d="M9 7H11V5H9V7Z" fill="#fff"/>
+                                                </svg>
+                                            </a>    
+                                        </div>
+                                    </div>
+                                    <div class="range__additional-volume" :style="{'width': avPercentValue}"></div>
+                                </div>
+
+                                <div class="legend d-flex flex-nowrap legend_cur_rank">
+                                    <div class="legend__item">
+                                        <div class="legend__title">Strong branch</div>
+                                        <span>[[ sbValue ]] USD(T)</span>   
+                                    </div>
+                                    <div class="legend__item">
+                                        <div class="legend__title">Additional volume</div>
+                                        <span>[[ avValue ]] USD(T)</span>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-9 offset-lg-3 offset-md-0">
+                        <div class="go-to-next-bonus pool-allocation">
+                            <span class="little-title">Bonus pool allocation</span>
+
+                            <div class="tile-table-wrapper">
+                                <table class="table tile__table table_tree table_transaction" id="tree">
+                                    <thead class="table__row table__head">
+                                        <tr>
+                                            <td>Rank</td>
+                                            <td>Bonus amount</td>
+                                            <td>Aplicants</td>
+                                            <td>Your bonus</td>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <tr class="table__row">
+                                            <td class="d-flex flex-nowrap align-items-center cell">1</td>
+                                            <td>2 000 USD(T)</td>
+                                            <td>25</td>
+                                            <td>80 USD(T)</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="d-flex flex-nowrap align-items-center cell">2</td>
+                                            <td>2 000 USD(T)</td>
+                                            <td>25</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="d-flex flex-nowrap align-items-center cell">3</td>
+                                            <td>2 000 USD(T)</td>
+                                            <td>25</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="d-flex flex-nowrap align-items-center cell">4</td>
+                                            <td>2 000 USD(T)</td>
+                                            <td>25</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="d-flex flex-nowrap align-items-center cell">5</td>
+                                            <td>2 000 USD(T)</td>
+                                            <td>25</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="d-flex flex-nowrap align-items-center cell">6</td>
+                                            <td>2 000 USD(T)</td>
+                                            <td>25</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="d-flex flex-nowrap align-items-center cell">7</td>
+                                            <td>2 000 USD(T)</td>
+                                            <td>25</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="d-flex flex-nowrap align-items-center cell">8</td>
+                                            <td>2 000 USD(T)</td>
+                                            <td>25</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="d-flex flex-nowrap align-items-center cell">9</td>
+                                            <td>2 000 USD(T)</td>
+                                            <td>25</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="d-flex flex-nowrap align-items-center cell">10</td>
+                                            <td>2 000 USD(T)</td>
+                                            <td>25</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td colspan="3" class="cell">Total will be accrued at the end of the current period</td>
+                                            <td class="text-blue">80 USD(T)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-12">
+            <div class="tile with-tile tile-referal">
+                <h4 class="d-flex align-items-center tile__title">Comulative bonus <img style="margin-left: 9px" src="static/img/question.svg" alt=""></h4>
+
+                <div class="row">
+                    <div class="col-lg-3">
+                        <span class="little-title">CURRENT RANK</span>
+                        <span class="big-number tile-fast-start__days-left">0</span>
+
+                        <span class="little-title">days left</span>
+                        <span class="big-number tile-fast-start__days-left mb-sm-0">240</span>
+                    </div>
+                    <div class="col-lg-9" id="comulativeBonusApp">
+                        <div class="go-to-next-bonus">
+                            <span class="little-title">TO GO TO THE NEXT rank</span>
+                            <p>
+                                <span class="bold-title tile__item-subtitle">Personally invited</span>
+                                
+                                <!-- Добавить к steps класс done если все выполнено (т.е. 3/3) -->
+                                <span class="steps">
+                                    <span class="steps__current">1 </span>/
+                                    <span class="steps__all">5</span>
+                                </span>
+                            </p>
+                            <div class="d-flex invited-peoples">
+                                <div class="invited-peoples__item">
+                                    <picture>
+                                        <source srcset="static/img/personally-invited1.webp" type="image/webp">
+                                        <source srcset="static/img/personally-invited1.jpg" type="image/jpeg">
+                                        <img src="static/img/personally-invited1.jpg" height="48" width="48" alt="Nickname - personally invited" loading="lazy">
+                                    </picture>
+                                </div>
+                                <!-- Если пустой, добавить класс no-avatar -->
+                                <div class="invited-peoples__item no-avatar"></div>
+                                <div class="invited-peoples__item no-avatar"></div>
+                                <div class="invited-peoples__item no-avatar"></div>
+                                <div class="invited-peoples__item no-avatar"></div>
+                            </div>
+                            <div>
+                                <span class="bold-title tile__item-subtitle">Volume</span>
+
+                                <!-- Добавить к steps класс done если все выполнено (т.е. 3/3) -->
+                                <div class="steps" :class="{'done': maxValue === sumValue}">
+                                    <span class="steps__current">[[ sumValue ]] USD(T) </span>/
+                                    <span class="steps__all">[[ maxValue ]] USD(T)</span>
+                                </div>
+
+                                <div class="range">
+                                    <div class="range__strong-branch" :style="{'width': sbPercentValue}">
+                                        <div class="invited-user d-flex flex-nowrap align-items-center cell">
+                                            <span class="cell__number">1</span>
+                                            <img class="cell__user-avatar" src="static/img/personally-invited1.jpg" alt="user avatar" width="48" height="48" loading="lazy">
+                                            <span class="cell__user-nickname">@Naz_Tokio</span>
+                                            <a href="#modal">
+                                                <svg class="cell__info-btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0Z" fill="#D6D6D6"/>
+                                                    <path d="M9 15H11V9H9V15Z" fill="#fff"/>
+                                                     <path d="M9 7H11V5H9V7Z" fill="#fff"/>
+                                                </svg>
+                                            </a>    
+                                        </div>
+                                    </div>
+                                    <div class="range__additional-volume" :style="{'width': avPercentValue}"></div>
+                                </div>
+
+                                <div class="legend d-flex flex-nowrap legend_cur_rank">
+                                    <div class="legend__item">
+                                        <div class="legend__title">Strong branch</div>
+                                        <span>[[ sbValue ]] USD(T)</span>   
+                                    </div>
+                                    <div class="legend__item">
+                                        <div class="legend__title">Additional volume</div>
+                                        <span>[[ avValue ]] USD(T)</span>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="go-to-next-bonus pool-allocation">
+                            <span class="little-title">5 branches with a volume exceeding 30 000</span>
+                            <ul class="list-of-branches">
+                                <li class="cell d-flex flex-nowrap" v-for="(branch, index) in branches">
+
+                                    <div class="d-flex align-items-center flex-nowrap list-of-branches__left">
+                                        <img class="cell__user-avatar" src="static/img/user-avatar.jpg" alt="user avatar">
+                                        <span class="cell__user-nickname">profile_name_1</span>
+                                        <div class="cell__info">
+                                            <svg class="cell__info-btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0Z" fill="#D6D6D6"/>
+                                                <path d="M9 15H11V9H9V15Z" fill="#fff"/>
+                                                <path d="M9 7H11V5H9V7Z" fill="#fff"/>
+                                            </svg>
+
+                                            <a href="#" class="tooltip text-underline">View structure > </a>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center flex-nowrap list-of-branches__right">
+                                        <div class="range">
+                                            <div class="range__strong-branch" :style="{'width': branchesInPercent[index]}"></div>
+                                        </div>
+
+                                        <!-- Добавить к steps класс done если все выполнено (т.е. 3/3) -->
+                                        <div class="steps" :class="{'done': branch.val === branch.maxval}">
+                                            <span class="steps__current">[[ branch.val ]] USD(T) </span>/
+                                            <span class="steps__all">[[ branch.maxval ]] USD(T)</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pool-allocation">
+                    <div class="col-12">
+                        <h4 class="d-flex align-items-center tile__title">Choose your bonus <img style="margin-left: 9px" src="static/img/question.svg" alt=""></h4>
+
+                        <div class="row">
+                            <div class="col-lg-4 col-12">
+                                <div class="card rank-card card_disabled">
+                                    <p class="little-title">rank 1</p>
+                                    <p class="rank-card__title">Toyota Corolla</p>
+                                    <picture class="current-bonus__image rank-picture">
+                                        <source srcset="static/img/car.webp" type="image/webp">
+                                        <source srcset="static/img/car.png" type="image/png">
+                                        <img src="static/img/car.png" height="192" width="323" alt="Toyota  Corolla">
+                                    </picture>
+                                    <p>or 24 000 USD(T)</p>
+                                    <a href="#!" class="btn btn_style3 rank-btn">Not available</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <div class="card rank-card">
+                                    <p class="little-title">rank 2</p>
+                                    <p class="rank-card__title">Toyota Camry</p>
+                                    <picture class="current-bonus__image rank-picture">
+                                        <source srcset="static/img/car2.webp" type="image/webp">
+                                        <source srcset="static/img/car2.png" type="image/png">
+                                        <img src="static/img/car2.png" height="192" width="323" alt="Toyota  Corolla">
+                                    </picture>
+                                    <p>or 42 000 USD(T)</p>
+                                    <a href="#rank" class="btn btn_style3 rank-btn">Choose</a>
+
+                                    <!-- Модальное окно -->
+                                    <div class="remodal remodal-rank" data-remodal-id="rank">
+                                        <picture class="current-bonus__image rank-picture">
+                                            <source srcset="static/img/car2.webp" type="image/webp">
+                                            <source srcset="static/img/car2.png" type="image/png">
+                                            <img src="static/img/car2.png" height="192" width="323" alt="Toyota  Corolla">
+                                        </picture>   
+                                        <h4 class="remodal-rank__title">Thank you for choosing a gift!</h4>
+                                        <p class="remodal-rank__text">
+                                            Please confirm your choice of prize so that a representative of the company will contact you shortly to clarify the details.
+                                        </p>                     
+                                        <a href="#!" class="btn btn_style1 remodal-rank__confirm-btn">Confirm</a>
+                                        <a href="#" class="text-underline" data-remodal-action="cancel">Select another gift</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <!-- Если бонус выбран, добавить класс chosen -->
+                                <div class="card rank-card card_chosen">
+                                    <p class="little-title">rank 3</p>
+                                    <p class="rank-card__title">3 room flat</p>
+                                    <picture class="current-bonus__image rank-picture">
+                                        <source srcset="static/img/flat.webp" type="image/webp">
+                                        <source srcset="static/img/flat.png" type="image/png">
+                                        <img src="static/img/flat.png" height="192" width="323" alt="Toyota  Corolla">
+                                    </picture>
+                                    <p>or 70 000 USD(T)</p>
+                                    <a href="#!" class="btn btn_style3 rank-btn">Chosen</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</main>
+
+<div class="remodal" data-remodal-id="modal">
+    <a href="#" data-remodal-action="close" class="remodal__close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3208 10L20 18.6792L18.6792 20L10 11.3208L1.32082 20L5.56683e-08 18.6792L8.67918 10L0 1.32082L1.32082 0L10 8.67918L18.6792 7.79356e-07L20 1.32082L11.3208 10Z" fill="#D6D6D6"/>
+        </svg>                
+    </a>
+    <span class="tile__item-title text-left remodal__title">Profile info</span>
+    <div class="remodal__user-nickname text-left d-flex align-items-center"><span>@Tony Montana</span><span class="alert alert_activated">Activated</span></div>
+    <div class="d-flex tile-wrapper tile-sponsor flex-nowrap">
+        <div class="tile-sponsor__avatar remodal__avatar">
+            <img src="static/img/avatar.jpg" alt="">
+        </div>
+        <div class="tile-sponsor__info">
+            <div class="tile-sponsor__contact tile-sponsor__invite-contact text-left">
+                <span class="tile-sponsor__contact-key">Invited by:</span><br>
+                <span class="tile-sponsor__contact-key">beauty777</span>
+            </div>
+            <div class="tile-sponsor__contact d-flex">
+                <span class="tile-sponsor__contact-key">Rang</span>
+                <span class="tile-sponsor__contact-val">2</span>
+            </div>
+            <div class="tile-sponsor__contact d-flex">
+                <span class="tile-sponsor__contact-key">Phone</span>
+                <span class="tile-sponsor__contact-val">+7 945 542 32 12</span>
+            </div>
+            <div class="tile-sponsor__contact d-flex">
+                <span class="tile-sponsor__contact-key">E-mail</span>
+                <span class="tile-sponsor__contact-val">andycarroll@gmail.com</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer2">
+    <div class="container d-flex align-items-center justify-content-between">
+        <p class="d-flex align-items-center">© 2021 Steppe Capital&nbsp;|&nbsp;<a href="#">Disclaimer</a></p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="static/js/libs.js"></script>
+<script src="static/js/main.js"></script>
+
+<script>
+
+    new Vue({
+        el: "#fastStartApp",
+        delimiters: ['[[', ']]'],
+        data(){
+            return{
+                sbValue: 4000, // strong branch
+                avValue: 6000, // additional volume
+                maxValue: 10000,
+            }
+        },
+        computed: {
+            sbPercentValue: function(){
+                return this.sbValue / this.maxValue * 100 + "%"
+            },
+            avPercentValue: function(){
+                return (this.avValue + this.sbValue) / this.maxValue * 100 + "%"
+            },
+            sumValue: function(){
+                return this.sbValue + this.avValue
+            }
+        }
+    });
+
+    new Vue({
+        el: "#currentRankApp",
+        delimiters: ['[[', ']]'],
+        data(){
+            return{
+                sbValue: 2000, // strong branch
+                avValue: 6000, // additional volume
+                maxValue: 10000,
+            }
+        },
+        computed: {
+            sbPercentValue: function(){
+                return this.sbValue / this.maxValue * 100 + "%"
+            },
+            avPercentValue: function(){
+                return (this.avValue + this.sbValue) / this.maxValue * 100 + "%"
+            },
+            sumValue: function(){
+                return this.sbValue + this.avValue
+            }
+        }
+    });
+
+    new Vue({
+        el: "#comulativeBonusApp",
+        delimiters: ['[[', ']]'],
+        data(){
+            return{
+                sbValue: 2000, // strong branch
+                avValue: 6000, // additional volume
+                maxValue: 350000,
+                branches: [
+                    {
+                        "val": 30000,
+                        "maxval": 30000
+                    },
+                    {
+                        "val": 6000,
+                        "maxval": 30000
+                    },
+                    {
+                        "val": 0,
+                        "maxval": 30000
+                    },
+                    {
+                        "val": 0,
+                        "maxval": 30000
+                    },
+                    {
+                        "val": 0,
+                        "maxval": 30000
+                    }
+                ]
+            }
+        },
+        computed: {
+            sbPercentValue: function(){
+                return this.sbValue / this.maxValue * 100 + "%"
+            },
+            avPercentValue: function(){
+                return (this.avValue + this.sbValue) / this.maxValue * 100 + "%"
+            },
+            sumValue: function(){
+                return this.sbValue + this.avValue
+            },
+            branchesInPercent: function(){
+                return this.branches.map( (b) => {
+                    return b.val / b.maxval * 100 + "%"
+                } )
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

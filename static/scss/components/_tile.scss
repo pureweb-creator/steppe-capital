@@ -3,6 +3,7 @@
     background: #fff;
     border-radius: 4px;
     height: 100%;
+    font-size: 16px;
 
     p{
         font-size: 16px;
@@ -12,6 +13,8 @@
     p:not(:last-child){
         margin-bottom: 12px
     }
+
+
 }
 
 .tile-table-wrapper{
@@ -52,7 +55,7 @@
 .tile-wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 16px;
+    grid-gap: 16px;
 }
   
 .tile__item{
@@ -77,6 +80,7 @@ p.tile_small{
     margin-bottom: 24px;
     display: inline-block !important;
     position: relative;
+    margin-right: 10px; 
 
     &:hover{
         .tooltip{
@@ -108,10 +112,25 @@ p.tile_small{
     display: block;
     position: relative;
 }
+
+.tile__item-subtitle{
+    line-height: 1.5;
+    display: inline-block;
+    margin: 0 16px 0 0;
+}
+
 .tile__number{
     display: block;
     font-size: 48px;
     line-height: 1.22em;
+
+    span{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 2.5;
+        display: inline-block;
+        margin-left: 5px;
+    }
 }
 
 .tile__item_blue2{
@@ -165,6 +184,12 @@ p.tile_small{
             fill: #fff
         }
     }
+
+    .tile__item{
+        background: rgba($blue1_main, .2);
+        background-blend-mode: multiply;
+        border: 1px solid rgba($blue1_main, .2)
+    }
 }
 
 .tile__balance{
@@ -203,4 +228,35 @@ p.tile_small{
     line-height: initial;
     margin-left: 8px;
     margin-top: 10px;
+}
+
+.tile-bonus{
+    grid-template-columns: 1fr 1fr;
+}
+
+.tile_no-bg{
+    background-image: linear-gradient(103.75deg, #5EB9E8 0%, #A4DEFC 100%)
+}
+
+.tile-income{
+    grid-template-columns: 1fr 1fr 2fr
+}
+
+.tile{
+    .little-title{
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .tile{
+        .little-title{
+            margin-bottom: 12px;
+        }
+
+        .tile__title{
+            margin-bottom: 16px;
+        }
+    }
 }
