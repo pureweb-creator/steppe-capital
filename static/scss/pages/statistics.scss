@@ -404,17 +404,6 @@ $shadow_blk_light: 0px 4px 16px rgba(0, 0, 0, 0.08);
 	.tile__number{
 		font-size: 40px;
 	}
-}
-
-
-@media screen and (max-width: 768px){
-	.tile-income,.tile-bonus{
-		grid-template-columns: 1fr;
-
-		.tile__item:last-child{
-			grid-column: 1/2
-		}
-	}
 
 	.go-to-next-bonus{
 		margin-left: 0;
@@ -591,4 +580,17 @@ $shadow_blk_light: 0px 4px 16px rgba(0, 0, 0, 0.08);
 			}
 		}
 	}
+}
+
+
+@media screen and (max-width: 768px){
+	.tile-income,.tile-bonus{
+		grid-template-columns: 1fr;
+
+		.tile__item:last-child{
+			grid-column: 1/2
+		}
+	}
+
+
 }
