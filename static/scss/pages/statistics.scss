@@ -226,6 +226,8 @@ $shadow_blk_light: 0px 4px 16px rgba(0, 0, 0, 0.08);
 	text-align: center;
 	top: 70px;
 	z-index: 999;
+
+	transition: all .3s ease
 }
 
 .slick-next::before,.slick-prev::before{
