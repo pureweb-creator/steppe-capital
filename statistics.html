@@ -234,7 +234,6 @@
 
 <main class="page page_profile page-statistics">
     <div class="container">
-
         <div class="row">
         <div class="col-12">
             <div class="page_str__offer">
@@ -529,7 +528,7 @@
         <div class="col-12">
             <div class="tile with-tile tile-referal">
                 <h4 class="d-flex align-items-center tile__title">Bonus pool <img style="margin-left: 9px" src="static/img/question.svg" alt=""></h4>
-                <a href="#" class="text-blue text-underline">Bonus history</a>
+                <a href="#bonusHistory" class="text-blue text-underline">Bonus history</a>
 
                 <div class="row">
                     <div class="col-lg-3">
@@ -874,6 +873,132 @@
         </div>
     </div>
 </main>
+
+<div class="remodal remodal_size_big text-left bpa-modal" data-remodal-id="bonusHistory">
+    <a href="#" data-remodal-action="close" class="remodal__close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3208 10L20 18.6792L18.6792 20L10 11.3208L1.32082 20L5.56683e-08 18.6792L8.67918 10L0 1.32082L1.32082 0L10 8.67918L18.6792 7.79356e-07L20 1.32082L11.3208 10Z" fill="#D6D6D6"/>
+        </svg>
+    </a>
+
+
+    <span class="little-title date d-flex ">bonus history</span>
+    <h4 class="d-flex align-items-center tile__title bpa-modal__title">Bonus pool allocation</h4>
+
+    <div class="d-flex flex-nowrap">
+        <select name="select-month" class="input-group_select input-group__input input-group_no-border bpa-modal__select date" id="month">
+            <option value="select">Month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+
+        <select name="select-year" class="input-group_select input-group__input input-group_no-border bpa-modal__select date" id="year">
+            <option value="select">Year</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="...">...</option>
+        </select>
+    </div>
+    
+    <div class="tile-table-wrapper">
+        <table class="table tile__table table_tree table_transaction">
+            <thead class="table__row table__head">
+                <tr>
+                    <td>Rank</td>
+                    <td>Bonus amount</td>
+                    <td>Aplicants</td>
+                    <td>Your bonus</td>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr class="table__row">
+                    <td class="d-flex flex-nowrap align-items-center cell">1</td>
+                    <td>2 000 USD(T)</td>
+                    <td>25</td>
+                    <td>80 USD(T)</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="d-flex flex-nowrap align-items-center cell">2</td>
+                    <td>2 000 USD(T)</td>
+                    <td>25</td>
+                    <td>0</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="d-flex flex-nowrap align-items-center cell">3</td>
+                    <td>2 000 USD(T)</td>
+                    <td>25</td>
+                    <td>0</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="d-flex flex-nowrap align-items-center cell">4</td>
+                    <td>2 000 USD(T)</td>
+                    <td>25</td>
+                    <td>0</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="d-flex flex-nowrap align-items-center cell">5</td>
+                    <td>2 000 USD(T)</td>
+                    <td>25</td>
+                    <td>0</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="d-flex flex-nowrap align-items-center cell">6</td>
+                    <td>2 000 USD(T)</td>
+                    <td>25</td>
+                    <td>0</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="d-flex flex-nowrap align-items-center cell">7</td>
+                    <td>2 000 USD(T)</td>
+                    <td>25</td>
+                    <td>0</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="d-flex flex-nowrap align-items-center cell">8</td>
+                    <td>2 000 USD(T)</td>
+                    <td>25</td>
+                    <td>0</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="d-flex flex-nowrap align-items-center cell">9</td>
+                    <td>2 000 USD(T)</td>
+                    <td>25</td>
+                    <td>0</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="d-flex flex-nowrap align-items-center cell">10</td>
+                    <td>2 000 USD(T)</td>
+                    <td>25</td>
+                    <td>0</td>
+                </tr>
+                <tr class="table__row">
+                    <td colspan="3" class="cell">Total will be accrued at the end of the current period</td>
+                    <td class="text-blue">80 USD(T)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+</div>
+
 
 <div class="remodal" data-remodal-id="modal">
     <a href="#" data-remodal-action="close" class="remodal__close">

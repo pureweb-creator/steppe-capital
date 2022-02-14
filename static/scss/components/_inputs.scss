@@ -52,8 +52,13 @@
   }
 }
 
+.input-group_no-border{
+  border: unset
+}
+
 .input-group_select{
   // color: $txt2;
+  cursor: pointer;
   font-family: inherit;
   background: url("../img/arrow-down.svg") no-repeat 95% center;
 

@@ -383,7 +383,27 @@ $shadow_blk_light: 0px 4px 16px rgba(0, 0, 0, 0.08);
 		border-color: $yellow
 	}
 }
+.bpa-modal{
+	table{
+		td:first-child{
+			padding-left: 24px;
+		}
+	}
+}
 
+
+.bpa-modal__title{
+	margin-top: 12px;
+}
+
+.bpa-modal__select{
+	max-width: 80px;
+	width: fit-content;
+	margin-right: 24px;
+	padding-left: 0;
+	font-size: 16px;
+	margin-bottom: 4px;
+}
 
 .slick-slide{
 	cursor: grab
@@ -573,12 +593,17 @@ $shadow_blk_light: 0px 4px 16px rgba(0, 0, 0, 0.08);
 		font-size: 14px;
 	}
 
-	.pool-allocation{
+	.pool-allocation, .bpa-modal{
 		.table__row:last-child{
 			td:first-child{
 				width: 100px
 			}
 		}
+	}
+
+
+	.bpa-modal__title{
+		margin-bottom: 18px;
 	}
 }
 

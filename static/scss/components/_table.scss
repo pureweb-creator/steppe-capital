@@ -135,3 +135,14 @@ table.simple-tree-table svg.tree-icon.tree-opened:after {
 table.simple-tree-table svg.tree-icon.tree-closed:after {
     display: none;
 }
+
+@media screen and (max-width: 768px){
+    table td{
+        font-size: 14px !important;
+    }
+
+    thead td{
+        font-size: 12px !important;
+        line-height: 1.5;
+    }
+}
