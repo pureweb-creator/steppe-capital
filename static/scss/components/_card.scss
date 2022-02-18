@@ -70,6 +70,9 @@
         max-width: 100%;
         width: 100%;
     }
+    &__title{
+        word-break: break-word
+    }
     &__price{
         font-weight: 600;
         span{

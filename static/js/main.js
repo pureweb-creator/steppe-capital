@@ -153,34 +153,68 @@ $(document).ready(function(){
 
     let slidesCount = $('.referals-slider__slide').length
     let slider = $('.referals-slider')
-    if(slidesCount > 8){
-        slider.slick({
-            slidesToShow: 6,
-            slidesToScroll: 1,    
-            centerMode: true,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            infinite: true,
-            nextArrow: `<a class="slick-button slick-next" href="#"><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.90477 8L0 2.05987L2.04761 0L10 8L2.04761 16L0 13.9401L5.90477 8Z" fill="#151515"/>
-                </svg></a>`,
-            prevArrow: `<a class="slick-button slick-prev" href="#"><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.09523 8L10 2.05987L7.95239 0L0 8L7.95239 16L10 13.9401L4.09523 8Z" fill="#151515"/>
-                </svg></a>`,
-            responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 4
+
+    if($(window).innerWidth > 500){
+        if(slidesCount > 8){
+            slider.slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,    
+                centerMode: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                nextArrow: `<a class="slick-button slick-next" href="#"><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.90477 8L0 2.05987L2.04761 0L10 8L2.04761 16L0 13.9401L5.90477 8Z" fill="#151515"/>
+                    </svg></a>`,
+                prevArrow: `<a class="slick-button slick-prev" href="#"><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.09523 8L10 2.05987L7.95239 0L0 8L7.95239 16L10 13.9401L4.09523 8Z" fill="#151515"/>
+                    </svg></a>`,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2
+                        }  
                     }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 2
-                    }  
-                }
-            ]
-        })
-    }            
+                ]
+            })
+        } 
+    }  else {
+        if(slidesCount > 3){
+            slider.slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,    
+                centerMode: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                nextArrow: `<a class="slick-button slick-next" href="#"><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.90477 8L0 2.05987L2.04761 0L10 8L2.04761 16L0 13.9401L5.90477 8Z" fill="#151515"/>
+                    </svg></a>`,
+                prevArrow: `<a class="slick-button slick-prev" href="#"><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.09523 8L10 2.05987L7.95239 0L0 8L7.95239 16L10 13.9401L4.09523 8Z" fill="#151515"/>
+                    </svg></a>`,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2
+                        }  
+                    }
+                ]
+            })  
+        }
+    }         
 });
