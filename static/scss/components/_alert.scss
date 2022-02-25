@@ -1,0 +1,18 @@
+.alert{
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.16em;
+    letter-spacing: .1em;
+    display: inline-block;
+}
+
+.alert_not_activated{
+    color: $red_error;
+    background: rgba(255, 64, 64, 0.1);
+}
+
+.alert_activated{
+    color: $blue1_main;
+    background: rgba(94, 185, 232, 0.1);
+}

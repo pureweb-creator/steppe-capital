@@ -10,6 +10,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: $txt1_main;
     position: relative;
+    overflow-y: scroll;
 
     display: flex;
     flex-flow: column;
@@ -17,6 +18,14 @@ body{
 
 p{
     word-break: break-word
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
 }
 
 .big-number{
@@ -86,6 +95,10 @@ h5{
 
 .text-blue{
     color: $blue1_main
+}
+
+.text-bold{
+    font-weight: 600;
 }
 
 .little-desc{

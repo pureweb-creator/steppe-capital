@@ -1,0 +1,36 @@
+.banner{
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  margin-bottom: 48px;
+  background: $blue1_main url('../img/banner.png') no-repeat right center / contain;
+
+  .banner__inner{
+    padding: 48px 0 24px 80px;
+
+  }
+
+  &__title{
+    margin-bottom: 12px;
+  }
+
+  &__text{
+    max-width: 573px;
+    margin-bottom: 24px;
+  }
+
+  .banner__img1{
+    top: -25px;
+    position: absolute;
+  }
+
+  .banner__img2{
+    height: 100%;
+  }
+
+}
+
+.banner_theme_white{
+  color: $txt1_main;
+  background: #fff url('../img/patter2white.svg') no-repeat right center / contain !important;
+}

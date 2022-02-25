@@ -86,6 +86,17 @@
     }
 }
 
+.card__poster{
+    position: relative;
+}
+
+.card__poster-alert{
+    position: absolute;
+    bottom: 12px;
+    right: 8px;
+    background: $blue3 !important;
+}
+
 
 .grid-sizer,
 .grid-item { width: 47%; margin-bottom: 30px; background: #fff; }

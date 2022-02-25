@@ -2,37 +2,6 @@
   margin-bottom: 43px;
 }
 
-.banner{
-  color: #fff;
-  font-size: 16px;
-  position: relative;
-  margin-bottom: 48px;
-  background: $blue1_main url('../img/banner.png') no-repeat right center / contain;
-
-  .banner__inner{
-    padding: 48px 0 48px 80px;
-
-  }
-
-  &__title{
-    margin-bottom: 12px;
-  }
-
-  &__text{
-    max-width: 573px;
-  }
-
-  .banner__img1{
-    top: -25px;
-    position: absolute;
-  }
-
-  .banner__img2{
-    height: 100%;
-  }
-
-}
-
 .referal-link{
   max-width: 259px;
   font-size: 14px;
