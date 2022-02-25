@@ -340,7 +340,7 @@
                         </div>
                     </div>
 
-                     <div v-if="quizCounter === questionsCount+3 && score()[1] > 80" class="banner banner_testing">
+                     <div v-if="quizCounter === questionsCount+3 && score()[1] >= 80" class="banner banner_testing">
                         <div class="banner__inner">
                             <h4 class="banner__title">
                                 Your result
@@ -494,6 +494,9 @@
             score: function() {
                 let correctAnswersCount = this.userResponses.filter(function(val) { return val }).length
                 let correctAnswersPercentage = correctAnswersCount / this.questionsCount * 100
+
+                console.log(correctAnswersCount)
+                console.log(correctAnswersPercentage)
 
                 return [correctAnswersCount, correctAnswersPercentage]
             },
