@@ -489,6 +489,8 @@
 
             tryAgain: function(){
                 this.quizCounter = 2
+                this.userResponses = Array(quiz.questions.length).fill(false)
+                this.answersScrore = 0
             },
 
             score: function() {
