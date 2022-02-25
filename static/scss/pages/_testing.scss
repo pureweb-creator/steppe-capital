@@ -9,3 +9,58 @@
 	font-size: 16px;
 	margin-right: 32px;
 }
+
+.banner_testing{
+	font-size: 16px;
+
+	.custom-checkbox{
+		margin: 12px 0;
+	}
+
+	.custom-checkbox__label{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.banner.banner_testing{
+		background-image: url("../img/pattern2mob.svg");
+		.banner__inner{
+			padding-bottom: 8px;
+		}
+	}
+
+	.banner_theme_white{
+		background-image: url("../img/pattern2whitemob.svg") !important;
+		background-position: bottom right !important
+	}
+
+	.btn-group_testing_btn{
+		margin-top: 24px;
+	}
+
+	.banner_testing__btn{
+		margin-bottom: 16px;
+		margin-top: 0;
+	}
+
+
+	.banner_testing__btn{
+		font-size: 14px;
+	}
+
+	.banner_testing{
+		font-size: 14px;
+		.custom-checkbox__label{
+			font-size: 14px;
+		}
+	}
+
+	.custom-checkbox__icon{
+		flex-shrink: 0;
+	}
+
+	.custom-checkbox{
+		flex-wrap: nowrap;
+	}
+}

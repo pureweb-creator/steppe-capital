@@ -243,7 +243,7 @@
                 <div id="testing">
                     
                     <transition name="fade">
-                        <div class="banner banner_testing" v-if="testingCounter==0">
+                        <div class="banner banner_testing" v-if="quizCounter===0">
                             <div class="banner__inner">
                                 <h4 class="banner__title">
                                     Basic trading skills
@@ -252,13 +252,17 @@
                                     This test shows how well you know about trading, the terms and different concepts that are useful for trading on online platforms.
                                 </p>
                                 <p class="text-bold">Percentage of correct answers for passing: 80%</p>
-                                <a href="#" @click="next" class="btn btn_style1 banner_testing__btn">Start</a>
+                                
+
+                                <div class="btn-group btn-group_testing_btn">
+                                    <a href="#" @click="next" class="btn btn_style1 banner_testing__btn">Next</a>
+                                </div>
                             </div>
                         </div>
                     </transition>
 
                     <transition name="fade">
-                        <div class="banner banner_testing banner_theme_white" v-if="testingCounter==1">
+                        <div class="banner banner_testing banner_theme_white" v-if="quizCounter===1">
                             <div class="banner__inner">
                                 <h4 class="banner__title">
                                     Basic trading skills
@@ -267,35 +271,94 @@
                                     This test shows how well you know about trading, the terms and different concepts that are useful for trading on online platforms.
                                 </p>
                                 <p class="text-bold">Percentage of correct answers for passing: 80%</p>
-                                <a href="#" @click="next" class="btn btn_style1 banner_testing__btn">Continue?</a>
-                                <a href="#" @click="startAgain" class="btn btn_style3 banner_testing__btn">Start again</a>
+                                
+
+                                <div class="btn-group btn-group_testing_btn">
+                                    <a href="#" @click="next" class="btn btn_style1 banner_testing__btn">Next</a>
+                                    <a href="#" @click="back" class="btn btn_style3 banner_testing__btn">Back</a>
+                                </div>
                             </div>
                         </div>
                     </transition>
 
-                    <transition name="fade" v-for="(question, index) in questions">
-                        <div class="banner banner_testing banner_theme_white" v-if="testingCounter==index+2">
+                    <transition name="fade" v-for="(question, index) in quiz.questions">
+                        <div class="banner banner_testing banner_theme_white" v-if="quizCounter===index+2">
                             <div class="banner__inner">
                                 <h4 class="banner__title">
                                     [[ index+1 ]]/[[ questionsCount ]]
                                 </h4>
-                                <p class="banner__text">[[ question.questionText ]]</p>
+                                <p class="banner__text">[[ question.text ]]</p>
 
-                                <label v-for="(answers, index) in question.answerOptions" :for="index" class="custom-checkbox d-flex">
-                                    <input class="custom-checkbox__input" type="radio" name="index" @click.once="handleAnswer(answers.isCorrect)" :id="index">
+                                <label v-for="(answers, ans_index) in question.responses" :for="ans_index" class="custom-checkbox d-flex">
+                                    <input class="custom-checkbox__input" type="radio" :name="index" :id="ans_index" :value="answers.correct" @click="checkAnswer($event, index)">
                                     <span class="custom-checkbox__icon">
                                         <span class="custom-checkbox__fill"></span>
                                     </span>
-                                    <div class="custom-checkbox__label"> [[ answers.answerText ]] </div>
+                                    <div class="custom-checkbox__label"> [[ answers.text ]] </div>
                                 </label>
 
-                                <a href="#" @click="next" class="btn btn_style1 banner_testing__btn">Next</a>
-                                <a href="#" @click="back" class="btn btn_style3 banner_testing__btn">Back</a>
+                                <div class="btn-group btn-group_testing_btn">
+                                    <a href="#" @click="next" class="btn btn_style1 banner_testing__btn">Next</a>
+                                    <a href="#" @click="back" class="btn btn_style3 banner_testing__btn">Back</a>
+                                </div>
                             </div>
                         </div>
                     </transition>
 
-                    
+                    <transition name="fade">
+                        <div class="banner banner_testing banner_theme_white" v-if="quizCounter===questionsCount+2">
+                            <div class="banner__inner">
+                                <h4 class="banner__title">
+                                    Confirmation
+                                </h4>
+                                <p class="banner__text">You have answered all the questions. Would you like to know the result?</p>
+
+                                <div class="btn-group btn-group_testing_btn">
+                                    <a href="#" @click="next" class="btn btn_style1 banner_testing__btn">Result</a>
+                                    <a href="#" @click="back" class="btn btn_style3 banner_testing__btn">Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </transition>
+
+                    <div v-if="quizCounter === questionsCount+3 && score()[1] < 80" class="banner banner_testing">
+                        <div class="banner__inner">
+                            <h4 class="banner__title">
+                                Your result
+                            </h4>
+                            <p class="banner__text">
+                                Correct answers: [[ score()[0] ]] out of [[ questionsCount ]]
+                            </p>
+                            <p class="banner__text">
+                                Percentage of correct answers: [[ score()[1] ]]%
+                            </p>
+                            <p class="text-bold">Unfortunately you did not pass the test :(</p>
+
+                            <div class="btn-group btn-group_testing_btn">
+                                <a href="#" @click="tryAgain" class="btn btn_style1 banner_testing__btn">Try again</a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div v-if="quizCounter === questionsCount+3 && score()[1] > 80" class="banner banner_testing">
+                        <div class="banner__inner">
+                            <h4 class="banner__title">
+                                Your result
+                            </h4>
+                            <p class="banner__text">
+                                Correct answers: [[ score()[0] ]] out of [[ questionsCount ]]
+                            </p>
+                            <p class="banner__text">
+                                Percentage of correct answers: [[ score()[1] ]]%
+                            </p>
+                            <p class="text-bold">Congratulations! You have passed the test.</p>
+
+                            <div class="btn-group btn-group_testing_btn">
+                                <a href="#" @click="startAgain" class="btn btn_style1 banner_testing__btn">Done</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -313,49 +376,68 @@
 <script src="static/js/main.js"></script>
 
 <script>
+
+    let quiz = {
+      questions: [
+        {
+          text: "If the price of bitcoin went down drastically, what would you do?",
+          responses: [
+            {text: 'I will panic and hunt for a tweet from Elon Musk that will explain everything'}, 
+            {text: 'Trying to catch the departing train and getting rid of a cheapening asset in a hurry'}, 
+            {text: 'I\'m going to pay off every bottom', correct: true}, 
+          ]
+        },
+        {
+          text: "Question 2",
+          responses: [
+            {text: 'Right answer', correct: true}, 
+            {text: 'Wrong answer'}, 
+            {text: 'Wrong answer'}, 
+          ]
+        } 
+      ]
+    };
     new Vue({
         el: "#testing",
         delimiters: ['[[', ']]'],
         data() {
             return{
-                testingCounter: 0,
+                quizCounter: 0,
                 answersScrore: 0,
-                questions: [
-                    {
-                        questionText: 'If the price of bitcoin went down drastically, what would you do?',
-                        answerOptions: [
-                            { answerText: 'I will panic and hunt for a tweet from Elon Musk that will explain everything' },
-                            { answerText: 'Trying to catch the departing train and getting rid of a cheapening asset in a hurry' },
-                            { answerText: 'I\'m going to pay off every bottom', isCorrect: true }
-                        ],
-                    }
-                ],
-                // responses: Array(questions.length).fill(false)
+                quiz: quiz,
+                userResponses: Array(quiz.questions.length).fill(false),
             }
         },
         methods: {
             next: function(){
-                this.testingCounter++
+                this.quizCounter++
             },
 
             back: function(){
-                this.testingCounter--
+                this.quizCounter--
             },
 
             startAgain: function(){
-                this.testingCounter = 0
+                this.quizCounter = 0
             },
-            handleAnswer: function(answer){
-                if (answer){
-                    this.answersScrore = this.answersScrore + 1
-                    console.log(this.answersScrore)
-                }
-                
-            }
+
+            tryAgain: function(){
+                this.quizCounter = 2
+            },
+
+            score: function() {
+                let correctAnswersCount = this.userResponses.filter(function(val) { return val }).length
+                let correctAnswersPercentage = correctAnswersCount / this.questionsCount * 100
+
+                return [correctAnswersCount, correctAnswersPercentage]
+            },
+            checkAnswer: function(event, index){
+                this.userResponses[index] = event.target.value
+            },
         },
         computed: {
             questionsCount: function(){
-                return this.questions.length
+                return this.quiz.questions.length
             }
         }
     });
